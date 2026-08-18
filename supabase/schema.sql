@@ -31,10 +31,12 @@ create index if not exists notices_source_site_idx on public.notices (source_sit
 alter table public.sites enable row level security;
 alter table public.notices enable row level security;
 
+drop policy if exists "sites are publicly readable" on public.sites;
 create policy "sites are publicly readable"
   on public.sites for select
   using (true);
 
+drop policy if exists "notices are publicly readable" on public.notices;
 create policy "notices are publicly readable"
   on public.notices for select
   using (true);
