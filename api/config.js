@@ -22,6 +22,7 @@ module.exports = (req, res) => {
   };
 
   res.setHeader("Content-Type", "application/javascript; charset=utf-8");
-  res.setHeader("Cache-Control", "public, max-age=300");
+  // 환경변수를 바꾼 뒤 브라우저 캐시 때문에 예전 값이 계속 보이는 걸 방지한다.
+  res.setHeader("Cache-Control", "no-store");
   res.status(200).send(`window.SUPABASE_CONFIG = ${JSON.stringify(config)};\n`);
 };
