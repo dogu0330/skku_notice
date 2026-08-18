@@ -5,9 +5,19 @@
 // anon key 는 RLS(행 단위 보안)로 읽기만 허용되도록 설계된 공개용 키라
 // 이렇게 응답으로 내려줘도 안전하다. service_role 키는 여기서 다루지 않는다
 // (그건 크롤러가 서버 환경에서만 쓰는 별도의 비밀 값이다).
+// Supabase 대시보드 예제 코드에는 종종 /rest/v1 이 붙은 URL이 나와서
+// 환경변수에 그걸 그대로 넣는 실수가 흔하다. supabase-js 는 프로젝트 기본
+// URL(https://xxx.supabase.co)을 기대하고 내부적으로 /rest/v1 을 붙이므로,
+// 여기서 미리 잘라내 어떤 값이 들어와도 동작하게 한다.
+function normalizeProjectUrl(raw) {
+  let url = (raw || "").trim().replace(/\/+$/, "");
+  url = url.replace(/\/rest(\/v1)?$/i, "");
+  return url;
+}
+
 module.exports = (req, res) => {
   const config = {
-    url: process.env.SUPABASE_URL || "",
+    url: normalizeProjectUrl(process.env.SUPABASE_URL),
     anonKey: process.env.SUPABASE_ANON_KEY || "",
   };
 
