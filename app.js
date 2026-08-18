@@ -360,6 +360,7 @@ function togglePanel(buttonId, panelId) {
 
 togglePanel("manage-categories", "category-panel");
 togglePanel("add-custom", "custom-panel");
+togglePanel("add-site-btn", "add-site-panel");
 
 $("custom-form").addEventListener("submit", (e) => {
   e.preventDefault();
@@ -392,6 +393,58 @@ $("custom-form").addEventListener("submit", (e) => {
 
   renderCustomFilter();
   renderList();
+});
+
+$("add-site-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const name = $("site-name").value.trim();
+  const listUrl = $("site-url").value.trim();
+  const hint = $("add-site-hint");
+  const submitBtn = e.target.querySelector("button[type=submit]");
+
+  const cfg = window.SUPABASE_CONFIG;
+  if (!cfg || !cfg.url || !cfg.anonKey) {
+    hint.textContent = "Supabase 연결이 설정되지 않아 사이트 추가를 사용할 수 없습니다.";
+    return;
+  }
+  if (!name || !listUrl) {
+    hint.textContent = "학과 이름과 URL을 모두 입력해 주세요.";
+    return;
+  }
+
+  submitBtn.disabled = true;
+  hint.textContent = "사이트를 확인하는 중입니다...";
+
+  try {
+    const res = await fetch(cfg.url + "/functions/v1/add-site", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        apikey: cfg.anonKey,
+        Authorization: "Bearer " + cfg.anonKey,
+      },
+      body: JSON.stringify({ name, list_url: listUrl }),
+    });
+    const result = await res.json();
+
+    if (!res.ok || !result.ok) {
+      hint.textContent = result.error || "사이트를 추가하지 못했습니다.";
+      return;
+    }
+
+    hint.textContent =
+      "'" + result.name + "' 공지 " + result.count + "건을 추가했습니다!";
+    $("site-name").value = "";
+    $("site-url").value = "";
+
+    state.notices = await loadNotices();
+    collectFacets();
+    renderAll();
+  } catch (err) {
+    hint.textContent = "요청 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.";
+  } finally {
+    submitBtn.disabled = false;
+  }
 });
 
 let debounce;

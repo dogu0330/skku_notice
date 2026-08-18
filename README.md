@@ -122,3 +122,35 @@ python crawler/crawl.py --sync-existing
 `python crawler/crawl.py` 를 돌리면, JSON 파일 저장 후 Supabase `notices` 테이블에도
 `original_url` 기준으로 upsert 됩니다. 환경변수가 없으면 이 단계는 조용히 건너뛰고
 지금처럼 JSON 파일만 갱신합니다 — 즉 Supabase 를 아직 안 만들었어도 기존 방식 그대로 동작합니다.
+
+## 사용자가 직접 학과 사이트 추가하기 (Edge Function)
+
+화면의 **사이트 추가 → ＋ 추가** 에 학과 이름과 게시판 URL을 넣으면, Supabase **Edge Function**
+(`add-site`)이 그 페이지를 서버에서 대신 읽어와 파싱한 뒤 `sites` / `notices` 테이블에 저장합니다.
+브라우저가 직접 학교 서버에 접속하는 게 아니라서 CORS 문제 없이 동작합니다.
+
+### 배포 (CLI 없이, 대시보드에서)
+
+1. Supabase 대시보드 → **SQL Editor** 에서 `supabase/schema.sql` 을 다시 한 번 실행합니다.
+   (`site_submissions` 테이블과 `sites.list_url` 유니크 인덱스가 새로 추가됐습니다. 여러 번
+   실행해도 안전하도록 만들어져 있습니다.)
+2. 대시보드 → **Edge Functions → New function** → 이름을 정확히 `add-site` 로 생성
+3. `supabase/functions/add-site/index.ts` 내용을 그대로 붙여넣고 **Deploy**
+4. 별도 설정은 필요 없습니다. `SUPABASE_URL` 과 `SUPABASE_SERVICE_ROLE_KEY` 는 Supabase 가
+   모든 Edge Function 에 자동으로 주입해 줍니다.
+
+### 안전장치
+
+- **도메인 제한**: `skku.edu` 로 끝나는 주소만 받습니다. 임의의 외부 사이트를 대신 긁어오는
+  용도로 악용되는 것(SSRF)을 막기 위한 최소한의 장치입니다.
+- **구조 검증**: 본교/기계공학부/학생성공센터와 같은 게시판(jwxe) 구조가 아니면, 즉 글을
+  하나도 못 찾으면 아무것도 저장하지 않고 에러만 돌려줍니다.
+- **속도 제한**: 같은 접속 IP가 5분 안에 5번 넘게 시도하면 잠깐 막습니다.
+  (`site_submissions` 테이블에 시도 기록이 쌓이는데, 공개 조회 권한은 없습니다.)
+
+### 알아둘 점 (현재 한계)
+
+지금은 사용자가 사이트를 추가하는 그 순간에 딱 한 번 크롤링합니다. 이후 그 학과의 새 공지를
+계속 자동으로 받아오려면, 기존 `crawler/crawl.py` (사이트당 1회 실행 크롤러)가 Supabase
+`sites` 테이블도 함께 읽어오도록 확장하고, 그걸 정기적으로 돌려주는 스케줄러(예: GitHub
+Actions cron)가 있어야 합니다. 지금 범위에는 포함돼 있지 않습니다.

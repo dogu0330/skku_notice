@@ -294,7 +294,13 @@ def sync_to_supabase(notices):
         print("[i] SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY 가 없어 Supabase 동기화를 건너뜁니다.")
         return
 
-    endpoint = url.rstrip("/") + "/rest/v1/notices"
+    # 대시보드 예제를 그대로 복붙해 /rest/v1 까지 포함된 URL을 넣는 실수를 방어한다.
+    base = url.rstrip("/")
+    for suffix in ("/rest/v1", "/rest"):
+        if base.lower().endswith(suffix):
+            base = base[: -len(suffix)]
+            break
+    endpoint = base + "/rest/v1/notices"
     headers = {
         "apikey": key,
         "Authorization": "Bearer %s" % key,
@@ -322,7 +328,10 @@ def sync_to_supabase(notices):
             print("[!] Supabase 동기화 요청 실패: %s" % exc)
             return
         if not res.ok:
-            print("[!] Supabase 동기화 실패(%d): %s" % (res.status_code, res.text[:300]))
+            print(
+                "[!] Supabase 동기화 실패(%d) url=%s: %s"
+                % (res.status_code, endpoint, res.text[:300])
+            )
             return
 
     print("[+] Supabase 동기화 완료: %d건 → %s" % (len(notices), url))
