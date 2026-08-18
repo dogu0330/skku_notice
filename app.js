@@ -60,9 +60,33 @@ function saveStorage() {
 
 /* ---------- 데이터 ---------- */
 
-/* file:// 로 열어도 동작하도록 data/notices.js 를 우선 사용하고,
-   서버로 서빙하는 경우에는 data/notices.json 을 다시 읽어 최신 상태로 갱신한다. */
+/* 데이터 소스 우선순위:
+   1) Supabase (config.js 에 설정돼 있으면 여기서 최신 데이터를 읽는다)
+   2) data/notices.json (서버로 서빙 중이면 fetch)
+   3) data/notices.js 에 담긴 window.NOTICES (file:// 로 열었을 때의 최후 수단) */
+async function loadFromSupabase() {
+  const cfg = window.SUPABASE_CONFIG;
+  if (!cfg || !cfg.url || !cfg.anonKey || cfg.url.includes("YOUR-PROJECT")) return null;
+  if (!window.supabase || !window.supabase.createClient) return null;
+
+  try {
+    const client = window.supabase.createClient(cfg.url, cfg.anonKey);
+    const { data, error } = await client
+      .from("notices")
+      .select("*")
+      .order("published_date", { ascending: false });
+    if (error) throw error;
+    if (Array.isArray(data)) return data;
+  } catch (e) {
+    console.warn("Supabase 조회 실패, 로컬 데이터로 대체합니다.", e);
+  }
+  return null;
+}
+
 async function loadNotices() {
+  const fromSupabase = await loadFromSupabase();
+  if (fromSupabase) return fromSupabase;
+
   const embedded = Array.isArray(window.NOTICES) ? window.NOTICES : [];
   try {
     const res = await fetch("data/notices.json", { cache: "no-store" });

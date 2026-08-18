@@ -12,6 +12,17 @@
 
 결과는 data/notices.json (원본) 과 data/notices.js (file:// 로 열 때용) 에 저장된다.
 같은 공지가 중복 저장되지 않도록 original_url 기준으로 upsert 한다.
+
+Supabase 연동 (선택):
+    환경변수 SUPABASE_URL 과 SUPABASE_SERVICE_ROLE_KEY 를 설정해두면,
+    수집이 끝난 뒤 결과를 Supabase notices 테이블에도 동기화한다.
+    두 값이 없으면 이 단계는 조용히 건너뛰고 지금처럼 JSON 파일만 갱신한다.
+
+    SERVICE_ROLE_KEY 는 RLS 를 무시할 수 있는 비밀 키이므로 절대 커밋하지 말 것.
+    로컬에서는 셸 환경변수로, 자동화(GitHub Actions 등)에서는 시크릿으로 주입한다.
+
+    이미 만들어둔 data/notices.json 을 다시 크롤링하지 않고 그대로 Supabase 에
+    올리고 싶다면: python crawler/crawl.py --sync-existing
 """
 
 import argparse
@@ -270,6 +281,53 @@ def save(notices):
         f.write(";\n")
 
 
+def sync_to_supabase(notices):
+    """수집 결과를 Supabase notices 테이블에 업서트한다.
+
+    SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY 환경변수가 없으면 조용히 건너뛴다.
+    id(=original_url 해시)를 기본키로 쓰기 때문에, PostgREST 의
+    'Prefer: resolution=merge-duplicates' 만으로 기존 행을 그대로 갱신할 수 있다.
+    """
+    url = os.environ.get("SUPABASE_URL")
+    key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
+    if not url or not key:
+        print("[i] SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY 가 없어 Supabase 동기화를 건너뜁니다.")
+        return
+
+    endpoint = url.rstrip("/") + "/rest/v1/notices"
+    headers = {
+        "apikey": key,
+        "Authorization": "Bearer %s" % key,
+        "Content-Type": "application/json",
+        "Prefer": "resolution=merge-duplicates",
+    }
+    # 컬럼에 없는 필드를 보내면 400 이 나므로 스키마에 맞게 정리한다.
+    columns = {
+        "id",
+        "title",
+        "source_site",
+        "category",
+        "published_date",
+        "original_url",
+        "crawled_at",
+        "first_seen_at",
+    }
+
+    batch_size = 200
+    for i in range(0, len(notices), batch_size):
+        batch = [{k: v for k, v in n.items() if k in columns} for n in notices[i : i + batch_size]]
+        try:
+            res = requests.post(endpoint, headers=headers, data=json.dumps(batch), timeout=30)
+        except requests.RequestException as exc:
+            print("[!] Supabase 동기화 요청 실패: %s" % exc)
+            return
+        if not res.ok:
+            print("[!] Supabase 동기화 실패(%d): %s" % (res.status_code, res.text[:300]))
+            return
+
+    print("[+] Supabase 동기화 완료: %d건 → %s" % (len(notices), url))
+
+
 def main():
     parser = argparse.ArgumentParser(description="성균관대 공지 통합 크롤러")
     parser.add_argument("--pages", type=int, default=1, help="사이트당 수집할 페이지 수")
@@ -279,7 +337,20 @@ def main():
         default=list(SITE_CONFIGS.keys()),
         help="수집할 사이트 이름 (기본: 전체)",
     )
+    parser.add_argument(
+        "--sync-existing",
+        action="store_true",
+        help="새로 크롤링하지 않고, data/notices.json 을 그대로 Supabase 에 동기화만 한다",
+    )
     args = parser.parse_args()
+
+    if args.sync_existing:
+        existing = load_existing()
+        if not existing:
+            print("[!] data/notices.json 이 비어 있습니다.")
+            return 1
+        sync_to_supabase(existing)
+        return 0
 
     incoming = []
     for site_name in args.sites:
@@ -301,6 +372,7 @@ def main():
         "[+] 저장 완료: 총 %d건 (신규 %d, 갱신 %d) → %s"
         % (len(merged), added, updated, JSON_PATH)
     )
+    sync_to_supabase(merged)
     return 0
 
 

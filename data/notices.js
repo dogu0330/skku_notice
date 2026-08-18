@@ -337,8 +337,8 @@ window.NOTICES = [
     "category": "학부",
     "published_date": "2026-08-11",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65769",
-    "crawled_at": "2026-08-18T23:20:15+09:00",
-    "first_seen_at": "2026-08-18T23:19:12+09:00"
+    "crawled_at": "2026-08-18T23:41:22+09:00",
+    "first_seen_at": "2026-08-18T23:20:15+09:00"
   },
   {
     "id": "6b5a6cb9e4642a28",
@@ -427,8 +427,8 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-08-03",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65495",
-    "crawled_at": "2026-08-18T23:20:15+09:00",
-    "first_seen_at": "2026-08-18T23:19:12+09:00"
+    "crawled_at": "2026-08-18T23:41:22+09:00",
+    "first_seen_at": "2026-08-18T23:20:15+09:00"
   },
   {
     "id": "9c773f34cc6069b3",
@@ -457,8 +457,8 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-07-20",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65257",
-    "crawled_at": "2026-08-18T23:20:15+09:00",
-    "first_seen_at": "2026-08-18T23:19:12+09:00"
+    "crawled_at": "2026-08-18T23:41:22+09:00",
+    "first_seen_at": "2026-08-18T23:20:15+09:00"
   },
   {
     "id": "91c2fe44716992c1",
@@ -507,8 +507,8 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-07-02",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64919",
-    "crawled_at": "2026-08-18T23:20:15+09:00",
-    "first_seen_at": "2026-08-18T23:19:12+09:00"
+    "crawled_at": "2026-08-18T23:41:22+09:00",
+    "first_seen_at": "2026-08-18T23:20:15+09:00"
   },
   {
     "id": "4c810da297a0a08d",
@@ -517,8 +517,8 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-07-02",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64918",
-    "crawled_at": "2026-08-18T23:20:15+09:00",
-    "first_seen_at": "2026-08-18T23:19:12+09:00"
+    "crawled_at": "2026-08-18T23:41:22+09:00",
+    "first_seen_at": "2026-08-18T23:20:15+09:00"
   },
   {
     "id": "a3ac8cdbd6ead17c",
@@ -527,8 +527,8 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-07-02",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64920",
-    "crawled_at": "2026-08-18T23:20:15+09:00",
-    "first_seen_at": "2026-08-18T23:19:12+09:00"
+    "crawled_at": "2026-08-18T23:41:22+09:00",
+    "first_seen_at": "2026-08-18T23:20:15+09:00"
   },
   {
     "id": "3492b6e1373406b3",
@@ -537,8 +537,8 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-06-25",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64805",
-    "crawled_at": "2026-08-18T23:20:15+09:00",
-    "first_seen_at": "2026-08-18T23:19:12+09:00"
+    "crawled_at": "2026-08-18T23:41:22+09:00",
+    "first_seen_at": "2026-08-18T23:20:15+09:00"
   },
   {
     "id": "4d3a3213ab8e70f0",
@@ -577,8 +577,8 @@ window.NOTICES = [
     "category": "학부",
     "published_date": "2026-06-18",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64715",
-    "crawled_at": "2026-08-18T23:20:15+09:00",
-    "first_seen_at": "2026-08-18T23:19:12+09:00"
+    "crawled_at": "2026-08-18T23:41:22+09:00",
+    "first_seen_at": "2026-08-18T23:20:15+09:00"
   },
   {
     "id": "79f5c025dafd4b32",
@@ -587,8 +587,8 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-06-16",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64657",
-    "crawled_at": "2026-08-18T23:20:15+09:00",
-    "first_seen_at": "2026-08-18T23:19:12+09:00"
+    "crawled_at": "2026-08-18T23:41:22+09:00",
+    "first_seen_at": "2026-08-18T23:20:15+09:00"
   },
   {
     "id": "ea02a09c02a17902",
@@ -597,8 +597,8 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-06-16",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64655",
-    "crawled_at": "2026-08-18T23:20:15+09:00",
-    "first_seen_at": "2026-08-18T23:19:12+09:00"
+    "crawled_at": "2026-08-18T23:41:22+09:00",
+    "first_seen_at": "2026-08-18T23:20:15+09:00"
   },
   {
     "id": "7668140d4acb65eb",

@@ -9,10 +9,12 @@
 index.html          메인 화면 (유일한 페이지)
 styles.css          스타일
 app.js              필터 · 검색 · 렌더링 로직
-data/notices.json   크롤링 결과 (원본 데이터)
+config.js           Supabase 프로젝트 URL / anon key (공개해도 되는 값)
+data/notices.json   크롤링 결과 (Supabase 미설정 시 사용하는 원본 데이터)
 data/notices.js     같은 데이터를 window.NOTICES 로 담은 파일 (file:// 로 열 때 사용)
+supabase/schema.sql Supabase 테이블 · RLS 정책 정의
 crawler/sites.json  수집할 사이트 목록 (여기만 고치면 사이트 추가 완료)
-crawler/crawl.py    파이썬 크롤러 (requests + BeautifulSoup)
+crawler/crawl.py    파이썬 크롤러 (requests + BeautifulSoup, 끝나면 Supabase 에도 동기화)
 ```
 
 ## 실행
@@ -71,3 +73,48 @@ python crawler/crawl.py --sites 본교
 ## 배포
 
 빌드 과정이 없는 정적 사이트라 폴더 그대로 Vercel / Netlify 에 올리면 됩니다.
+
+## Supabase 로 DB 관리하기
+
+지금은 `data/notices.json` 파일이 데이터 원본이지만, Supabase 를 연결하면 화면이 그 대신
+Supabase 테이블을 읽습니다. (연결이 안 돼 있으면 지금처럼 JSON 파일로 자동 대체됩니다.)
+
+### 1) 프로젝트 만들고 스키마 적용
+
+1. [supabase.com](https://supabase.com) 에서 새 프로젝트 생성
+2. 대시보드 → SQL Editor → `supabase/schema.sql` 내용을 붙여넣고 실행
+   (`notices`, `sites` 테이블 생성 + 읽기 전용 RLS 정책 + 기존 3개 사이트 시드 데이터)
+3. 대시보드 → Project Settings → API 에서 두 값을 확인
+   - **Project URL**
+   - **anon / public key** (읽기만 허용되는 공개 키)
+
+### 2) 화면이 Supabase 를 보게 하기
+
+`config.js` 에 위 두 값을 넣습니다. 이 키는 공개돼도 안전하도록 설계된 값이라 커밋해도 됩니다.
+
+```js
+window.SUPABASE_CONFIG = {
+  url: "https://xxxxxxxx.supabase.co",
+  anonKey: "eyJhbGciOi...",
+};
+```
+
+### 3) 기존 JSON 데이터를 한 번 옮기기
+
+지금까지 크롤링해둔 `data/notices.json` 을 다시 크롤링하지 않고 그대로 Supabase 에 넣습니다.
+
+```bash
+export SUPABASE_URL="https://xxxxxxxx.supabase.co"
+export SUPABASE_SERVICE_ROLE_KEY="eyJhbGciOi..."   # Project Settings → API → service_role (비밀)
+python crawler/crawl.py --sync-existing
+```
+
+**`service_role` 키는 RLS 를 무시할 수 있는 비밀 키입니다. `config.js` 나 저장소에 절대 커밋하지 말고,
+셸 환경변수 또는 CI 시크릿으로만 사용하세요.**
+
+### 4) 이후 크롤링부터는 자동으로 Supabase 에도 동기화
+
+같은 두 환경변수(`SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`)가 설정된 상태로
+`python crawler/crawl.py` 를 돌리면, JSON 파일 저장 후 Supabase `notices` 테이블에도
+`original_url` 기준으로 upsert 됩니다. 환경변수가 없으면 이 단계는 조용히 건너뛰고
+지금처럼 JSON 파일만 갱신합니다 — 즉 Supabase 를 아직 안 만들었어도 기존 방식 그대로 동작합니다.
