@@ -137,8 +137,11 @@ def load_sites_from_supabase():
     try:
         res = requests.get(endpoint, headers=headers, params=params, timeout=15)
         res.raise_for_status()
-        rows = res.json()
-    except (requests.RequestException, ValueError) as exc:
+        # res.json() 은 응답 헤더에 charset 이 없으면 requests 가 인코딩을 추측하는데,
+        # 한글처럼 짧은 멀티바이트 문자열에서 이 추측이 종종 틀려 글자가 깨진다.
+        # Supabase(PostgREST)는 항상 UTF-8 로 응답하므로 직접 명시해서 디코딩한다.
+        rows = json.loads(res.content.decode("utf-8"))
+    except (requests.RequestException, ValueError, UnicodeDecodeError) as exc:
         print("[!] Supabase sites 조회 실패, sites.json 으로 대체합니다: %s" % exc)
         return None
 
