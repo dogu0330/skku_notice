@@ -1,0 +1,284 @@
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --text: #1b1f24;
+  --muted: #6b7280;
+  --line: #e3e6ea;
+  --accent: #00563f; /* 성균관대 상징색 계열 */
+  --accent-soft: #e6efec;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  line-height: 1.5;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.site-header {
+  background: var(--accent);
+  color: #fff;
+  padding: 28px 0 24px;
+}
+.site-header h1 { margin: 0; font-size: 22px; letter-spacing: -0.02em; }
+.tagline { margin: 6px 0 0; font-size: 14px; opacity: 0.85; }
+
+main { padding-bottom: 48px; }
+
+.filters {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 20px;
+}
+
+/* ---- 필터 행 ---- */
+
+.filter-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 6px 0;
+}
+.filter-row + .filter-row { border-top: 1px solid #f0f2f4; }
+
+.filter-label {
+  flex: 0 0 62px;
+  padding-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.chip:hover { border-color: var(--accent); }
+.chip-label {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 14px;
+  padding: 6px 13px;
+  cursor: pointer;
+}
+.chip-remove {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1;
+  padding: 6px 10px 7px 2px;
+  cursor: pointer;
+}
+.chip-remove:hover { color: #c0392b; }
+.chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.chip.active .chip-remove { color: rgba(255, 255, 255, 0.75); }
+.chip.active .chip-remove:hover { color: #fff; }
+
+.inline-hint {
+  align-self: center;
+  font-size: 13px;
+  color: #9aa1aa;
+}
+
+.link-btn {
+  flex: 0 0 auto;
+  align-self: center;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.link-btn:hover { text-decoration: underline; }
+
+/* ---- 펼침 패널 ---- */
+
+.panel {
+  background: #fafbfc;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  margin: 4px 0 8px;
+}
+.panel-title { margin: 0 0 10px; font-size: 13px; color: var(--muted); }
+.panel-hint { margin: 8px 0 0; font-size: 13px; color: var(--accent); min-height: 1em; }
+
+.checks { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.check {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.check input { accent-color: var(--accent); }
+
+.custom-form { display: flex; gap: 8px; flex-wrap: wrap; }
+.custom-form input {
+  padding: 9px 11px;
+  font-size: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+}
+#custom-name { flex: 0 1 160px; min-width: 0; }
+#custom-keywords { flex: 1 1 220px; min-width: 0; }
+.custom-form input:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+
+.primary-btn {
+  padding: 9px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.primary-btn:hover { opacity: 0.92; }
+
+/* ---- 검색 ---- */
+
+.search-row { display: flex; gap: 8px; margin-top: 10px; }
+#keyword {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+}
+#keyword:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+.reset-btn {
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.reset-btn:hover { border-color: var(--accent); }
+
+/* ---- 목록 ---- */
+
+.meta-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--muted);
+  margin: 16px 2px 8px;
+}
+
+.notice-list { list-style: none; margin: 0; padding: 0; }
+.notice-item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.notice-item a {
+  display: block;
+  padding: 14px 16px;
+  color: inherit;
+  text-decoration: none;
+}
+.notice-item a:hover { background: #fbfcfd; }
+.notice-title {
+  font-size: 15.5px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  word-break: break-word;
+}
+.notice-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--muted);
+}
+.badge {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.badge.cat { background: #eef1f5; color: #4b5563; font-weight: 500; }
+
+.empty { text-align: center; color: var(--muted); padding: 40px 0; }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 18px 0 28px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.site-footer p { margin: 0; }
+.site-footer code {
+  background: #eef1f4;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+@media (max-width: 560px) {
+  .site-header { padding: 22px 0 18px; }
+  .site-header h1 { font-size: 19px; }
+  .notice-title { font-size: 15px; }
+
+  .filter-row {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter-label { flex: 0 0 100%; padding-top: 0; }
+  .chips { flex: 1 1 auto; }
+
+  .search-row { flex-direction: column; }
+  .reset-btn { width: 100%; }
+  .custom-form input, .primary-btn { flex: 1 1 100%; }
+}

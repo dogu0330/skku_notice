@@ -1,0 +1,308 @@
+# -*- coding: utf-8 -*-
+"""
+성균관대 공지사항 통합 크롤러 (MVP)
+
+사용법:
+    pip install requests beautifulsoup4
+    python crawler/crawl.py            # 사이트별 1페이지(10건)씩 수집
+    python crawler/crawl.py --pages 3  # 사이트별 3페이지씩 수집
+
+수집할 사이트 목록은 crawler/sites.json 에 있다.
+학과 사이트를 추가하려면 그 파일에 name / list_url 을 한 줄 넣고 다시 실행하면 된다.
+
+결과는 data/notices.json (원본) 과 data/notices.js (file:// 로 열 때용) 에 저장된다.
+같은 공지가 중복 저장되지 않도록 original_url 기준으로 upsert 한다.
+"""
+
+import argparse
+import hashlib
+import json
+import os
+import re
+import sys
+import time
+from datetime import datetime, timezone
+from urllib.parse import urljoin
+
+# 윈도우 콘솔(cp949)에서 한글 로그가 깨지지 않도록 표준출력을 UTF-8로 강제한다.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
+import requests
+from bs4 import BeautifulSoup
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+JSON_PATH = os.path.join(DATA_DIR, "notices.json")
+JS_PATH = os.path.join(DATA_DIR, "notices.js")
+SITES_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sites.json")
+
+# 게시판 종류별 셀렉터 프리셋.
+# 성균관대 사이트는 대부분 동일한 CMS(jwxe) 를 쓰기 때문에 프리셋 하나로 커버된다.
+# 구조가 다른 게시판이 생기면 여기에 프리셋을 추가하고 sites.json 에서 preset 으로 지정하면 된다.
+SELECTOR_PRESETS = {
+    "jwxe": {
+        "list_item": "ul.board-list-wrap > li",
+        "title_link": "dt.board-list-content-title a",
+        "category": "span.c-board-list-category",
+        "info_items": "dd.board-list-content-info li",
+        "date_index": 2,  # 정보 목록에서 날짜가 위치하는 순서 (0: 번호, 1: 작성자, 2: 날짜)
+    }
+}
+DEFAULT_PRESET = "jwxe"
+
+# sites.json 을 읽지 못했을 때 사용하는 기본 사이트 목록
+FALLBACK_SITES = [
+    {
+        "name": "본교",
+        "list_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do",
+        "preset": "jwxe",
+        "page_size": 10,
+    },
+    {
+        "name": "기계공학부",
+        "list_url": "https://mech.skku.edu/me/notice.do",
+        "preset": "jwxe",
+        "page_size": 10,
+    },
+    {
+        "name": "학생성공센터",
+        "list_url": "https://success.skku.edu/success/notice.do",
+        "preset": "jwxe",
+        "page_size": 10,
+    },
+]
+
+
+def load_site_configs():
+    """crawler/sites.json 에서 사이트 목록을 읽어 {이름: 설정} 형태로 돌려준다.
+
+    학과 사이트를 추가할 때 파이썬 코드를 고칠 필요 없이
+    sites.json 에 항목 한 줄만 넣으면 되도록 분리해 둔 것이다.
+    """
+    raw = None
+    try:
+        with open(SITES_PATH, "r", encoding="utf-8") as f:
+            raw = json.load(f)
+    except (OSError, ValueError) as exc:
+        print("[!] sites.json 을 읽지 못해 기본 목록을 사용합니다: %s" % exc)
+
+    entries = FALLBACK_SITES
+    if isinstance(raw, dict) and isinstance(raw.get("sites"), list):
+        entries = raw["sites"]
+    elif isinstance(raw, list):  # sites 키 없이 배열만 적은 경우도 허용
+        entries = raw
+
+    configs = {}
+    for entry in entries:
+        name = (entry.get("name") or "").strip()
+        list_url = (entry.get("list_url") or "").strip()
+        if not name or not list_url:
+            print("[!] name 또는 list_url 이 비어 있는 항목을 건너뜁니다: %r" % (entry,))
+            continue
+        preset_name = entry.get("preset") or DEFAULT_PRESET
+        selectors = dict(SELECTOR_PRESETS.get(preset_name, SELECTOR_PRESETS[DEFAULT_PRESET]))
+        if preset_name not in SELECTOR_PRESETS:
+            print("[!] '%s' 프리셋을 찾을 수 없어 %s 로 대체합니다." % (preset_name, DEFAULT_PRESET))
+        # 프리셋 일부만 덮어쓰고 싶을 때를 위한 개별 셀렉터 지정
+        if isinstance(entry.get("selectors"), dict):
+            selectors.update(entry["selectors"])
+        configs[name] = {
+            "list_url": list_url,
+            "selectors": selectors,
+            "page_size": entry.get("page_size", 10),  # article.offset 증가 단위
+        }
+    return configs
+
+
+SITE_CONFIGS = load_site_configs()
+
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    )
+}
+
+DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
+
+
+def canonicalize(url):
+    """목록 페이지마다 붙는 offset 파라미터를 제거해
+    같은 공지가 다른 URL로 중복 저장되는 것을 막는다."""
+    return re.sub(r"&(article\.offset|articleLimit)=[^&]*", "", url)
+
+
+def make_id(url):
+    return hashlib.sha1(url.encode("utf-8")).hexdigest()[:16]
+
+
+def clean(text):
+    return re.sub(r"\s+", " ", (text or "")).strip()
+
+
+def fetch_page(list_url, offset, timeout=15):
+    params = {"mode": "list", "article.offset": offset, "articleLimit": 10}
+    res = requests.get(list_url, params=params, headers=HEADERS, timeout=timeout)
+    res.raise_for_status()
+    res.encoding = res.apparent_encoding or "utf-8"
+    return res.text
+
+
+def parse_list(html, site_name, list_url, selectors):
+    soup = BeautifulSoup(html, "html.parser")
+    notices = []
+    now = datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")
+
+    for li in soup.select(selectors["list_item"]):
+        link = li.select_one(selectors["title_link"])
+        if link is None or not link.get("href"):
+            continue
+
+        title = clean(link.get_text())
+        if not title:
+            continue
+
+        original_url = canonicalize(urljoin(list_url, link["href"]))
+
+        cat_el = li.select_one(selectors["category"])
+        category = clean(cat_el.get_text()).strip("[]") if cat_el else None
+        if not category:
+            category = None
+
+        published_date = None
+        info_texts = [clean(x.get_text()) for x in li.select(selectors["info_items"])]
+        idx = selectors.get("date_index", 2)
+        if len(info_texts) > idx and DATE_RE.fullmatch(info_texts[idx] or ""):
+            published_date = info_texts[idx]
+        else:  # 순서가 다를 경우를 대비한 예비 탐색
+            for text in info_texts:
+                m = DATE_RE.search(text or "")
+                if m:
+                    published_date = m.group(0)
+                    break
+
+        notices.append(
+            {
+                "id": make_id(original_url),
+                "title": title,
+                "source_site": site_name,
+                "category": category,
+                "published_date": published_date,
+                "original_url": original_url,
+                "crawled_at": now,
+            }
+        )
+
+    return notices
+
+
+def crawl_site(site_name, config, pages):
+    collected = []
+    page_size = config.get("page_size", 10)
+    for page in range(pages):
+        offset = page * page_size
+        try:
+            html = fetch_page(config["list_url"], offset)
+        except Exception as exc:  # 한 사이트가 실패해도 나머지는 계속 수집한다
+            print("  [!] %s offset=%d 요청 실패: %s" % (site_name, offset, exc))
+            break
+        items = parse_list(html, site_name, config["list_url"], config["selectors"])
+        print("  - offset=%d → %d건" % (offset, len(items)))
+        if not items:
+            break
+        collected.extend(items)
+        time.sleep(0.5)  # 서버 부담을 줄이기 위한 간격
+    return collected
+
+
+def load_existing():
+    if not os.path.exists(JSON_PATH):
+        return []
+    try:
+        with open(JSON_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, list) else []
+    except (ValueError, OSError):
+        return []
+
+
+def upsert(existing, incoming):
+    """original_url 기준으로 병합. 기존 항목은 새 정보로 갱신하고, 새 항목은 추가한다."""
+    merged = {}
+    for item in existing:
+        url = item.get("original_url")
+        if url:
+            merged[url] = item
+
+    added, updated = 0, 0
+    for item in incoming:
+        url = item["original_url"]
+        if url in merged:
+            first_seen = merged[url].get("crawled_at")
+            merged[url] = dict(item)
+            # 처음 수집한 시각을 유지하면 "언제부터 있던 공지인지" 추적할 수 있다
+            merged[url]["crawled_at"] = item["crawled_at"]
+            merged[url]["first_seen_at"] = merged[url].get("first_seen_at") or first_seen
+            updated += 1
+        else:
+            item = dict(item)
+            item["first_seen_at"] = item["crawled_at"]
+            merged[url] = item
+            added += 1
+
+    result = sorted(
+        merged.values(),
+        key=lambda n: (n.get("published_date") or "", n.get("title") or ""),
+        reverse=True,
+    )
+    return result, added, updated
+
+
+def save(notices):
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(JSON_PATH, "w", encoding="utf-8") as f:
+        json.dump(notices, f, ensure_ascii=False, indent=2)
+    with open(JS_PATH, "w", encoding="utf-8") as f:
+        f.write("/* 자동 생성 파일 - crawler/crawl.py 실행 결과 */\n")
+        f.write("window.NOTICES = ")
+        json.dump(notices, f, ensure_ascii=False, indent=2)
+        f.write(";\n")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="성균관대 공지 통합 크롤러")
+    parser.add_argument("--pages", type=int, default=1, help="사이트당 수집할 페이지 수")
+    parser.add_argument(
+        "--sites",
+        nargs="*",
+        default=list(SITE_CONFIGS.keys()),
+        help="수집할 사이트 이름 (기본: 전체)",
+    )
+    args = parser.parse_args()
+
+    incoming = []
+    for site_name in args.sites:
+        config = SITE_CONFIGS.get(site_name)
+        if not config:
+            print("[!] 알 수 없는 사이트: %s" % site_name)
+            continue
+        print("[*] %s 수집 중..." % site_name)
+        incoming.extend(crawl_site(site_name, config, args.pages))
+
+    if not incoming:
+        print("[!] 수집된 공지가 없습니다.")
+        return 1
+
+    existing = load_existing()
+    merged, added, updated = upsert(existing, incoming)
+    save(merged)
+    print(
+        "[+] 저장 완료: 총 %d건 (신규 %d, 갱신 %d) → %s"
+        % (len(merged), added, updated, JSON_PATH)
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

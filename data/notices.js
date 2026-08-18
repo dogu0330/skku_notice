@@ -1,0 +1,813 @@
+/* 자동 생성 파일 - crawler/crawl.py 실행 결과 */
+window.NOTICES = [
+  {
+    "id": "a06ff04d38e64e52",
+    "title": "제5회 SKKU 메이킹 해커톤 참가자 모집 안내",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139173",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "003268316430010b",
+    "title": "정보통신대학 반도체융합공학과 대학원 학사 직원 채용 공고",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139184",
+    "crawled_at": "2026-08-18T23:19:08+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "f83448c366950b87",
+    "title": "정보통신대학 BK214 교육연구단 행정직원 모집",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=138949",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "6bfe4c360cfa741a",
+    "title": "성균관대학교 DMC공학과 담당직원 채용(~8/21)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139044",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "fd2a6605b31aed2c",
+    "title": "성균공학포럼 및 YEHS 회원 선발 설명회",
+    "source_site": "기계공학부",
+    "category": "행사/세미나",
+    "published_date": "2026-08-18",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=223538",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:19:10+09:00"
+  },
+  {
+    "id": "e1d138f0cd924a83",
+    "title": "노벨상 수상자 초청 세미나 개최 안내(9/10)",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139163",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:19:08+09:00"
+  },
+  {
+    "id": "db4d140c8147d574",
+    "title": "경영대학 경영원 공개과정 운영보조 조교 모집",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139188",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:19:08+09:00"
+  },
+  {
+    "id": "efb831ce33298095",
+    "title": "[접수 마감] 경영관 체력증진센터 근로학생 모집(~8/18)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139096",
+    "crawled_at": "2026-08-18T23:19:08+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "bc4f8faaa8ab8f97",
+    "title": "[자과캠]2026-2학기 장애학생 교육활동 지원인력 모집(학부/대학원생)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139172",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "23c556c1ecca5bc4",
+    "title": "[인사캠] 외국인유학생지원팀 외국인 학부 입시 업무 보조 근로학생 모집(채용 시 마감)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139175",
+    "crawled_at": "2026-08-18T23:19:08+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "2001f7f5d856243e",
+    "title": "[앵커 사업단]「반도체 생태계 및 산업의 거동과 현황」특강 참여 학생 모집(~8/21(금))",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=138856",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "4a9b58a79e3ffa34",
+    "title": "[스포츠재활 연구실] 만성 발목 불안정성 대상 감각-인지 기반 발목 재활운동 연구 참여자 모집",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139179",
+    "crawled_at": "2026-08-18T23:19:08+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "62d15e34f23cbf91",
+    "title": "[법학연구원] 2026학년도 2학기 법학연구원 채용공고 연장안내",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139176",
+    "crawled_at": "2026-08-18T23:19:08+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "9dfa322b13451862",
+    "title": "[마감]성균관대학교 생명물리학과 바이오나노포토닉스 연구실(김인기교수) 행정직 채용",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=138897",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "48ece52852e77635",
+    "title": "[2026년도 2학기 수자원전문대학원] 겸임교수 채용 공고",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139178",
+    "crawled_at": "2026-08-18T23:19:08+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "ff7c6411a539fb6a",
+    "title": "2026학년도 2학기 재학생 학자금대출 기등록자 특별승인 신청 안내",
+    "source_site": "본교",
+    "category": "장학",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139165",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "419d24e52d112a29",
+    "title": "2026학년도 2학기 문제해결과컴퓨팅사고(온라인강의) 이론/실습TA 모집",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=138892",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "15a4e2892cd18773",
+    "title": "2026학년도 2학기 데이터분석과AI기초(한옥영 교수님) 이론/실습TA 모집",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139031",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "1e0f7dd4eb7fd6f0",
+    "title": "2026학년도 2학기 데이터분석과AI기초(민무홍교수님) 실습TA 모집",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139026",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "fd6c6bae57b4cb4d",
+    "title": "2026학년도 2학기 다우기술 SW장학생 선발 안내(~8월 21일 금요일 오전 9시까지)",
+    "source_site": "본교",
+    "category": "장학",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139168",
+    "crawled_at": "2026-08-18T23:19:08+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "52ecf3c02a6172c1",
+    "title": "2026학년도 2학기 국가근로장학사업 희망근로지 신청 안내(08.13.(목) ~ 08.19.(수))",
+    "source_site": "본교",
+    "category": "장학",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139114",
+    "crawled_at": "2026-08-18T23:19:08+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "10bb47d4b44bc4ef",
+    "title": "2026년도 2학기 삼원장학재단 삼원장학생 선발 안내",
+    "source_site": "본교",
+    "category": "장학",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139174",
+    "crawled_at": "2026-08-18T23:19:08+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "ab084f895b771c6f",
+    "title": "2026년 여름 단과대학별 학위수여식 안내",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139081",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:19:08+09:00"
+  },
+  {
+    "id": "b7024d8fa55e13d3",
+    "title": "\"김박사넷: 유일혁 대표의 시작과 변화: AI 시대의 커리어 취업 교육 안내",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-08-18",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139183",
+    "crawled_at": "2026-08-18T23:19:08+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "2bc88425a840d51e",
+    "title": "현대자동차와 MathWorks의 공동 기술 세미나",
+    "source_site": "기계공학부",
+    "category": "행사/세미나",
+    "published_date": "2026-08-14",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=223456",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:19:10+09:00"
+  },
+  {
+    "id": "44f1c32de6789ac6",
+    "title": "봉룡학사 기숙사 생활지도조교 추가 모집 공고(대학원생(여))(~08/23)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-13",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139100",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:19:08+09:00"
+  },
+  {
+    "id": "ace2113ae4cd69f0",
+    "title": "2026년 여름 전체 학위수여식 「학부모·가족이 전하는 졸업 축하 영상 메시지」 접수 안내(~8.18.(화)오전 9시까지/연장)",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-08-13",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=138988",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:19:08+09:00"
+  },
+  {
+    "id": "0a296106efa920e9",
+    "title": "2026년 9월 성균관대학교 잡페어",
+    "source_site": "기계공학부",
+    "category": "행사/세미나",
+    "published_date": "2026-08-13",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=223447",
+    "crawled_at": "2026-08-18T23:19:10+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "79f4d355d2a8a437",
+    "title": "[실험 참여자 모집] 자연과학캠퍼스/N센터/집적신경보철연구실 '가상현실 (VR) 도구 사용 숙련도 향상' 연구 (2일연속/총90분/3만원 지급)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-12",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139098",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:19:08+09:00"
+  },
+  {
+    "id": "45c94eeaf1afd3fd",
+    "title": "[배터리학과]행정직원 모집(~8/20)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-12",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139097",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:19:08+09:00"
+  },
+  {
+    "id": "a2e1c3a83d50647a",
+    "title": "중국대학원(인사캠) 행정조교 모집 안내( ~ 8. 20.(목)/채용 결정 시 마감)",
+    "source_site": "본교",
+    "category": "취업",
+    "published_date": "2026-08-11",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139063",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:19:08+09:00"
+  },
+  {
+    "id": "a1f4b148ea84b96a",
+    "title": "2026학년도 2학기 성적우수장학금_추가신청(8/11)",
+    "source_site": "기계공학부",
+    "category": "장학",
+    "published_date": "2026-08-11",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=223267",
+    "crawled_at": "2026-08-18T23:19:10+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "f4ef24e96dbb1e08",
+    "title": "2026년 여름(8월) 학위수여자 학위증서 배부 계획 안내",
+    "source_site": "본교",
+    "category": "학사",
+    "published_date": "2026-08-11",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139080",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:19:08+09:00"
+  },
+  {
+    "id": "08f8426809ba0741",
+    "title": "2026 학생성공 교수멘토링 선호도 조사 안내",
+    "source_site": "학생성공센터",
+    "category": "학부",
+    "published_date": "2026-08-11",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65769",
+    "crawled_at": "2026-08-18T23:20:15+09:00",
+    "first_seen_at": "2026-08-18T23:19:12+09:00"
+  },
+  {
+    "id": "6b5a6cb9e4642a28",
+    "title": "기계공학프로그래밍 추가 분반 개설 안내",
+    "source_site": "기계공학부",
+    "category": "수강신청",
+    "published_date": "2026-08-10",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=223224",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:19:10+09:00"
+  },
+  {
+    "id": "d584dd5ddb97e90f",
+    "title": "[세미나]양자정보연구지원센터 양자 산업 세미나 (SDT & NVIDIA)",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-08-10",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139029",
+    "crawled_at": "2026-08-18T23:19:09+09:00",
+    "first_seen_at": "2026-08-18T23:19:08+09:00"
+  },
+  {
+    "id": "0011b5e062497096",
+    "title": "2026학년도 2학기 학부생 연구학점제 [URP 1형] 시행안내(신청기간~8/7)",
+    "source_site": "기계공학부",
+    "category": "학사",
+    "published_date": "2026-08-06",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=223085",
+    "crawled_at": "2026-08-18T23:19:10+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "1df6bfae70d01f7c",
+    "title": "2026학년도 2학기 연구활동종사자 안전교육 의무 이수 안내",
+    "source_site": "기계공학부",
+    "category": "학사",
+    "published_date": "2026-08-06",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=223123",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:19:10+09:00"
+  },
+  {
+    "id": "ef820d1d3c64ff5c",
+    "title": "2026-하계 (학내)연구실습 발표 평가 안내-(수정)20260810",
+    "source_site": "기계공학부",
+    "category": "채용/모집",
+    "published_date": "2026-08-05",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=223005",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:19:10+09:00"
+  },
+  {
+    "id": "a2aec1ed79b9e28e",
+    "title": "3D 공모전 대비 온라인 교육 참석 신청",
+    "source_site": "기계공학부",
+    "category": "행사/세미나",
+    "published_date": "2026-08-04",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=222934",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:19:10+09:00"
+  },
+  {
+    "id": "44002de9d9f3784d",
+    "title": "2026학년도 2학기 연구실습(학내), Co-op(외부) 안내",
+    "source_site": "기계공학부",
+    "category": "채용/모집",
+    "published_date": "2026-08-03",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=222914",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:19:10+09:00"
+  },
+  {
+    "id": "457739b0da65e648",
+    "title": "2026-2학기 (학내) 연구실습 모집 안내문(김규남, 김성곤, 문형필, 박성수, 백승현, 석지원, 이동우, 이원영, 이진기)_3차공지_260812",
+    "source_site": "기계공학부",
+    "category": "채용/모집",
+    "published_date": "2026-08-03",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=222917",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:19:10+09:00"
+  },
+  {
+    "id": "0aba332d1c5b5cd2",
+    "title": "2026 대학원 리더십 워크숍 시행",
+    "source_site": "학생성공센터",
+    "category": "대학원",
+    "published_date": "2026-08-03",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65495",
+    "crawled_at": "2026-08-18T23:20:15+09:00",
+    "first_seen_at": "2026-08-18T23:19:12+09:00"
+  },
+  {
+    "id": "9c773f34cc6069b3",
+    "title": "TechWing _7월 각 부문 채용 안내",
+    "source_site": "기계공학부",
+    "category": "채용/모집",
+    "published_date": "2026-07-24",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=222492",
+    "crawled_at": "2026-08-18T23:19:10+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "87cf86d4b74fc54c",
+    "title": "[일반] 2026년도 하계 학위복 대여사업 안내",
+    "source_site": "기계공학부",
+    "category": "일반",
+    "published_date": "2026-07-22",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=222357",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:19:10+09:00"
+  },
+  {
+    "id": "77ca8dd4f6a2aae2",
+    "title": "성공레터 7월호: 교내외 비교과 프로그램 정보 모아보기!",
+    "source_site": "학생성공센터",
+    "category": "일반",
+    "published_date": "2026-07-20",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65257",
+    "crawled_at": "2026-08-18T23:20:15+09:00",
+    "first_seen_at": "2026-08-18T23:19:12+09:00"
+  },
+  {
+    "id": "91c2fe44716992c1",
+    "title": "2026학년도 2학기 자율주행캡스톤디자인, 차량용임베디드소프트웨어 교과목 수강신청 안내 (~7/22)",
+    "source_site": "기계공학부",
+    "category": null,
+    "published_date": "2026-07-16",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=222183",
+    "crawled_at": "2026-08-18T23:19:10+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "a2c5a7a381e3f8e6",
+    "title": "2026학년도 2학기 성적우수장학금 신청 안내",
+    "source_site": "기계공학부",
+    "category": "장학",
+    "published_date": "2026-07-13",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=222025",
+    "crawled_at": "2026-08-18T23:19:10+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "9d8f366836833d7e",
+    "title": "[HD건설기계] 7/10(금) HD현대 건설기계부문 Career Talk",
+    "source_site": "기계공학부",
+    "category": "행사/세미나",
+    "published_date": "2026-07-06",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=221779",
+    "crawled_at": "2026-08-18T23:19:10+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "fb5c85979c9c5e69",
+    "title": "2026학년도 1학기(2차) 미래차 SDV/전동화/자율주행 마이크로디그리 신청 안내 - 7/13(월)~17(금)",
+    "source_site": "기계공학부",
+    "category": "채용/모집",
+    "published_date": "2026-07-02",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=221639",
+    "crawled_at": "2026-08-18T23:19:10+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "944a30a04968df1d",
+    "title": "2026 대학원 AI 활용 연구방법론(기초, 심화)",
+    "source_site": "학생성공센터",
+    "category": "대학원",
+    "published_date": "2026-07-02",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64919",
+    "crawled_at": "2026-08-18T23:20:15+09:00",
+    "first_seen_at": "2026-08-18T23:19:12+09:00"
+  },
+  {
+    "id": "4c810da297a0a08d",
+    "title": "2026 대학원 AI 활용 논문작성법(기초, 심화)",
+    "source_site": "학생성공센터",
+    "category": "대학원",
+    "published_date": "2026-07-02",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64918",
+    "crawled_at": "2026-08-18T23:20:15+09:00",
+    "first_seen_at": "2026-08-18T23:19:12+09:00"
+  },
+  {
+    "id": "a3ac8cdbd6ead17c",
+    "title": "2026 대학원 3MT 학술 커뮤니케이션 역량 강화 워크숍(기초, 심화)",
+    "source_site": "학생성공센터",
+    "category": "대학원",
+    "published_date": "2026-07-02",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64920",
+    "crawled_at": "2026-08-18T23:20:15+09:00",
+    "first_seen_at": "2026-08-18T23:19:12+09:00"
+  },
+  {
+    "id": "3492b6e1373406b3",
+    "title": "성공레터 6월호: 2026 학생성공 1학기 학생성공센터 탐구 영역",
+    "source_site": "학생성공센터",
+    "category": "일반",
+    "published_date": "2026-06-25",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64805",
+    "crawled_at": "2026-08-18T23:20:15+09:00",
+    "first_seen_at": "2026-08-18T23:19:12+09:00"
+  },
+  {
+    "id": "4d3a3213ab8e70f0",
+    "title": "2026년 여름방학 연구개발(R&D) 유급 인턴 모집",
+    "source_site": "기계공학부",
+    "category": "채용/모집",
+    "published_date": "2026-06-24",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=221241",
+    "crawled_at": "2026-08-18T23:19:10+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "45ada7dfc660b7fa",
+    "title": "2026-2학기 학부 졸업논문 지도교수 신청 안내",
+    "source_site": "기계공학부",
+    "category": "학사",
+    "published_date": "2026-06-22",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=219620",
+    "crawled_at": "2026-08-18T23:19:10+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "d59e904b1123ab8e",
+    "title": "[학생인재개발팀/대학일자리플러스센터] 2026학년도 여름방학 진로/취업지원 프로그램 안내",
+    "source_site": "기계공학부",
+    "category": "취업",
+    "published_date": "2026-06-19",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=219527",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "c7d0df4adb70e438",
+    "title": "2026 학생성공스토리 공모전 발표회",
+    "source_site": "학생성공센터",
+    "category": "학부",
+    "published_date": "2026-06-18",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64715",
+    "crawled_at": "2026-08-18T23:20:15+09:00",
+    "first_seen_at": "2026-08-18T23:19:12+09:00"
+  },
+  {
+    "id": "79f5c025dafd4b32",
+    "title": "2026 대학원 정서지원&참여활동 프로그램(2): 나만의 힐링 아이콘 만들기",
+    "source_site": "학생성공센터",
+    "category": "대학원",
+    "published_date": "2026-06-16",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64657",
+    "crawled_at": "2026-08-18T23:20:15+09:00",
+    "first_seen_at": "2026-08-18T23:19:12+09:00"
+  },
+  {
+    "id": "ea02a09c02a17902",
+    "title": "2026 대학원 Mental Care 프로그램(2): 멘탈의 핵심, 자존감",
+    "source_site": "학생성공센터",
+    "category": "대학원",
+    "published_date": "2026-06-16",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64655",
+    "crawled_at": "2026-08-18T23:20:15+09:00",
+    "first_seen_at": "2026-08-18T23:19:12+09:00"
+  },
+  {
+    "id": "7668140d4acb65eb",
+    "title": "2026학년도 President's List 신청 안내",
+    "source_site": "기계공학부",
+    "category": "일반",
+    "published_date": "2026-06-15",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=219070",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "168a4eff4b6ea5cd",
+    "title": "2026 학생성공스토리 공모전 최종 수상자 발표",
+    "source_site": "학생성공센터",
+    "category": null,
+    "published_date": "2026-06-12",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64608",
+    "crawled_at": "2026-08-18T23:19:12+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "fed615b9b14735ee",
+    "title": "2026 대학원 소통 역량 강화 프로그램(2): 글쓰기 클래스",
+    "source_site": "학생성공센터",
+    "category": "대학원",
+    "published_date": "2026-06-08",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64522",
+    "crawled_at": "2026-08-18T23:19:12+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "20ae36a51bd26cce",
+    "title": "2026 3D Design for the Future",
+    "source_site": "기계공학부",
+    "category": "채용/모집",
+    "published_date": "2026-06-01",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=218485",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:19:10+09:00"
+  },
+  {
+    "id": "99294e11fed9c64b",
+    "title": "2026 대학원 사회공헌역량 강화 프로그램: 함께 만드는 ESG",
+    "source_site": "학생성공센터",
+    "category": "대학원",
+    "published_date": "2026-05-27",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64315",
+    "crawled_at": "2026-08-18T23:19:12+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "30843cbab320d0e8",
+    "title": "성공레터 5월호: 2026 학생성공 서포터즈를 소개합니다!",
+    "source_site": "학생성공센터",
+    "category": "일반",
+    "published_date": "2026-05-26",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64265",
+    "crawled_at": "2026-08-18T23:19:12+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "88f8e410169253d3",
+    "title": "[미래차부트캠프] 2026년 제4회 성균관대학교 AI 자율주행 경진대회 참가 신청 안내 - 5/21(목) ~ 5/27(수)",
+    "source_site": "기계공학부",
+    "category": "채용/모집",
+    "published_date": "2026-05-26",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=218208",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "deb74fe92c279c3e",
+    "title": "2026학년도 ‘나의 대학생활 길잡이 특강’ 성료",
+    "source_site": "학생성공센터",
+    "category": "학부",
+    "published_date": "2026-05-26",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64276",
+    "crawled_at": "2026-08-18T23:19:12+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "a68d981479133bd7",
+    "title": "2026- 1학기 (학내)연구실습 발표 평가 안내_260601수정",
+    "source_site": "기계공학부",
+    "category": "채용/모집",
+    "published_date": "2026-05-26",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=218263",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "d6423e277d45ad06",
+    "title": "2026학년도 하계방학 연구실습(학내), Co-op(외부) 안내",
+    "source_site": "기계공학부",
+    "category": "채용/모집",
+    "published_date": "2026-05-22",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=218176",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "e1db9bacca83aa24",
+    "title": "2026-하계 (학내) 연구실습 모집 안내문(김성곤, 박성수, 백상열, 백승현, 석지원, 이동우, 이원영, 이준, 이진기, 장두준, 정형모, 조정완)_5차공지_260604",
+    "source_site": "기계공학부",
+    "category": "채용/모집",
+    "published_date": "2026-05-22",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=218179",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "7ca0020268f85ac9",
+    "title": "2026 대학원 웰니스 프로그램(틈새 필라테스) 성료",
+    "source_site": "학생성공센터",
+    "category": "대학원",
+    "published_date": "2026-05-22",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64190",
+    "crawled_at": "2026-08-18T23:19:12+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "b0d026a33338d462",
+    "title": "2026 대학원 소통역량 강화 프로그램: 인간관계법",
+    "source_site": "학생성공센터",
+    "category": "대학원",
+    "published_date": "2026-05-21",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64171",
+    "crawled_at": "2026-08-18T23:19:12+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "00f4fbb2a37e47a6",
+    "title": "2026 대학원 Mental Care 프로그램(갈등관리법) 성료",
+    "source_site": "학생성공센터",
+    "category": "대학원",
+    "published_date": "2026-05-21",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64173",
+    "crawled_at": "2026-08-18T23:19:12+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "70f17a35ceeda593",
+    "title": "2026학년도 학생성공스토리 공모전 1차 서류 심사 합격자 발표",
+    "source_site": "학생성공센터",
+    "category": "학부",
+    "published_date": "2026-05-20",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64135",
+    "crawled_at": "2026-08-18T23:19:12+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "f036210174cfae1f",
+    "title": "제38회 학생성공스토리 특강 성료",
+    "source_site": "학생성공센터",
+    "category": "학부",
+    "published_date": "2026-05-19",
+    "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64102",
+    "crawled_at": "2026-08-18T23:19:12+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "9b41e876cd47a3b1",
+    "title": "2026학년도 하계 학부생 연구학점제 [URP 1형] 시행안내(신청기간5/20~5/27)",
+    "source_site": "기계공학부",
+    "category": "학사",
+    "published_date": "2026-05-19",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=217976",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "afe31498f783c6ce",
+    "title": "[미래차부트캠프] 2026년 LG전자 VS연구소 투어 참가 신청 안내",
+    "source_site": "기계공학부",
+    "category": null,
+    "published_date": "2026-05-11",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=217567",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "786de2edbcae0853",
+    "title": "2026학년도 국가우수장학금(이공계) 재학중우수자(2년지원) 유형 신규장학생 추천 안내",
+    "source_site": "기계공학부",
+    "category": "장학",
+    "published_date": "2026-05-11",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=217582",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "05d0799ee1007e26",
+    "title": "2026-1학기 졸업평가 증빙자료 제출 안내(~6/4 15시)",
+    "source_site": "기계공학부",
+    "category": "학사",
+    "published_date": "2026-05-07",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=217410",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:03:03+09:00"
+  },
+  {
+    "id": "d4da97a5d4c69a72",
+    "title": "[ABEEK] 공학교육인증(ABEEK) 이수를 위한 학점 취득 인정 심사 신청 안내",
+    "source_site": "기계공학부",
+    "category": "학사",
+    "published_date": "2026-01-05",
+    "original_url": "https://mech.skku.edu/me/notice.do?mode=view&articleNo=211502",
+    "crawled_at": "2026-08-18T23:19:11+09:00",
+    "first_seen_at": "2026-08-18T23:19:10+09:00"
+  }
+];
