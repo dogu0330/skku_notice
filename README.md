@@ -9,7 +9,7 @@
 index.html          메인 화면 (유일한 페이지)
 styles.css          스타일
 app.js              필터 · 검색 · 렌더링 로직
-config.js           Supabase 프로젝트 URL / anon key (공개해도 되는 값)
+api/config.js       Vercel 서버리스 함수. 환경변수(SUPABASE_URL/SUPABASE_ANON_KEY)를 읽어 브라우저에 내려줌
 data/notices.json   크롤링 결과 (Supabase 미설정 시 사용하는 원본 데이터)
 data/notices.js     같은 데이터를 window.NOTICES 로 담은 파일 (file:// 로 열 때 사용)
 supabase/schema.sql Supabase 테이블 · RLS 정책 정의
@@ -90,14 +90,18 @@ Supabase 테이블을 읽습니다. (연결이 안 돼 있으면 지금처럼 JS
 
 ### 2) 화면이 Supabase 를 보게 하기
 
-`config.js` 에 위 두 값을 넣습니다. 이 키는 공개돼도 안전하도록 설계된 값이라 커밋해도 됩니다.
+값을 코드에 커밋하지 않고, Vercel 대시보드 → 프로젝트 → **Settings → Environment Variables** 에서
+아래 두 개를 등록합니다 (이름이 정확히 일치해야 `api/config.js` 가 읽습니다).
 
-```js
-window.SUPABASE_CONFIG = {
-  url: "https://xxxxxxxx.supabase.co",
-  anonKey: "eyJhbGciOi...",
-};
-```
+| 이름 | 값 |
+|---|---|
+| `SUPABASE_URL` | Project URL |
+| `SUPABASE_ANON_KEY` | anon / public key |
+
+등록 후 Vercel에서 재배포(Redeploy)하면 반영됩니다. `api/config.js` 는 요청이 올 때마다
+이 환경변수를 읽어 `window.SUPABASE_CONFIG` 를 만들어 내려주는 서버리스 함수라서,
+저장소에는 실제 URL/키가 전혀 남지 않습니다. (환경변수가 비어 있으면 자동으로
+`data/notices.json` 로 대체됩니다.)
 
 ### 3) 기존 JSON 데이터를 한 번 옮기기
 
@@ -109,8 +113,8 @@ export SUPABASE_SERVICE_ROLE_KEY="eyJhbGciOi..."   # Project Settings → API �
 python crawler/crawl.py --sync-existing
 ```
 
-**`service_role` 키는 RLS 를 무시할 수 있는 비밀 키입니다. `config.js` 나 저장소에 절대 커밋하지 말고,
-셸 환경변수 또는 CI 시크릿으로만 사용하세요.**
+**`service_role` 키는 RLS 를 무시할 수 있는 비밀 키입니다. 저장소나 Vercel의 `SUPABASE_ANON_KEY`
+자리에 절대 넣지 말고, 크롤러를 실행하는 로컬 셸 또는 CI 시크릿으로만 사용하세요.**
 
 ### 4) 이후 크롤링부터는 자동으로 Supabase 에도 동기화
 

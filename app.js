@@ -66,7 +66,7 @@ function saveStorage() {
    3) data/notices.js 에 담긴 window.NOTICES (file:// 로 열었을 때의 최후 수단) */
 async function loadFromSupabase() {
   const cfg = window.SUPABASE_CONFIG;
-  if (!cfg || !cfg.url || !cfg.anonKey || cfg.url.includes("YOUR-PROJECT")) return null;
+  if (!cfg || !cfg.url || !cfg.anonKey) return null;
   if (!window.supabase || !window.supabase.createClient) return null;
 
   try {
