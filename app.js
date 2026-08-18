@@ -2,6 +2,7 @@
 
 const STORAGE_KEYS = {
   hiddenCategories: "skku-notices:hidden-categories",
+  hiddenSites: "skku-notices:hidden-sites",
   customCategories: "skku-notices:custom-categories",
 };
 
@@ -12,6 +13,7 @@ const state = {
   sites: [], // 데이터에서 자동으로 뽑는다 (sites.json 에 사이트를 추가하면 여기에도 자동 반영)
   categories: [],
   hiddenCategories: new Set(),
+  hiddenSites: new Set(),
   customCategories: [], // [{ id, name, keywords: [] }]
   site: ALL,
   category: ALL,
@@ -32,6 +34,8 @@ function loadStorage() {
   try {
     const hidden = JSON.parse(localStorage.getItem(STORAGE_KEYS.hiddenCategories) || "[]");
     if (Array.isArray(hidden)) state.hiddenCategories = new Set(hidden);
+    const hiddenSites = JSON.parse(localStorage.getItem(STORAGE_KEYS.hiddenSites) || "[]");
+    if (Array.isArray(hiddenSites)) state.hiddenSites = new Set(hiddenSites);
     const custom = JSON.parse(localStorage.getItem(STORAGE_KEYS.customCategories) || "[]");
     if (Array.isArray(custom)) {
       state.customCategories = custom.filter(
@@ -49,6 +53,7 @@ function saveStorage() {
       STORAGE_KEYS.hiddenCategories,
       JSON.stringify([...state.hiddenCategories])
     );
+    localStorage.setItem(STORAGE_KEYS.hiddenSites, JSON.stringify([...state.hiddenSites]));
     localStorage.setItem(
       STORAGE_KEYS.customCategories,
       JSON.stringify(state.customCategories)
@@ -117,9 +122,11 @@ function matchesCustom(notice, custom) {
 }
 
 function visibleNotices() {
-  // 숨긴 카테고리는 목록 자체에서 제외한다
+  // 숨긴 카테고리 · 숨긴 출처는 목록 자체에서 제외한다
   return state.notices.filter(
-    (n) => !(n.category && state.hiddenCategories.has(n.category))
+    (n) =>
+      !(n.category && state.hiddenCategories.has(n.category)) &&
+      !state.hiddenSites.has(n.source_site)
   );
 }
 
@@ -167,7 +174,11 @@ function makeChip(label, active, onClick, onRemove) {
 function renderSiteFilter() {
   const box = $("site-filter");
   box.innerHTML = "";
-  [ALL, ...state.sites].forEach((name) => {
+  const shown = state.sites.filter((s) => !state.hiddenSites.has(s));
+  // 숨긴 출처가 선택된 상태로 남지 않도록 정리
+  if (state.site !== ALL && !shown.includes(state.site)) state.site = ALL;
+
+  [ALL, ...shown].forEach((name) => {
     box.appendChild(
       makeChip(name, state.site === name, () => {
         state.site = name;
@@ -175,6 +186,32 @@ function renderSiteFilter() {
         renderList();
       })
     );
+  });
+}
+
+function renderSiteChecks() {
+  const box = $("site-checks");
+  box.innerHTML = "";
+  if (state.sites.length === 0) {
+    box.textContent = "수집된 출처가 없습니다.";
+    return;
+  }
+  state.sites.forEach((name) => {
+    const label = document.createElement("label");
+    label.className = "check";
+    const input = document.createElement("input");
+    input.type = "checkbox";
+    input.checked = !state.hiddenSites.has(name);
+    input.addEventListener("change", () => {
+      if (input.checked) state.hiddenSites.delete(name);
+      else state.hiddenSites.add(name);
+      saveStorage();
+      renderSiteFilter();
+      renderList();
+    });
+    label.appendChild(input);
+    label.appendChild(document.createTextNode(name));
+    box.appendChild(label);
   });
 }
 
@@ -340,6 +377,7 @@ function renderUpdated() {
 
 function renderAll() {
   renderSiteFilter();
+  renderSiteChecks();
   renderCategoryFilter();
   renderCategoryChecks();
   renderCustomFilter();
@@ -358,6 +396,7 @@ function togglePanel(buttonId, panelId) {
   });
 }
 
+togglePanel("manage-sites", "site-panel");
 togglePanel("manage-categories", "category-panel");
 togglePanel("add-custom", "custom-panel");
 togglePanel("add-site-btn", "add-site-panel");
