@@ -123,11 +123,14 @@ async function checkRateLimit(admin: ReturnType<typeof createClient>, ip: string
 async function logSubmission(
   admin: ReturnType<typeof createClient>,
   ip: string,
+  name: string,
   listUrl: string,
   ok: boolean,
   message: string
 ) {
-  await admin.from("site_submissions").insert({ client_ip: ip, list_url: listUrl, ok, message });
+  await admin
+    .from("site_submissions")
+    .insert({ client_ip: ip, name, list_url: listUrl, ok, message });
 }
 
 Deno.serve(async (req) => {
@@ -187,7 +190,7 @@ Deno.serve(async (req) => {
       signal: controller.signal,
     });
     if (!res.ok) {
-      await logSubmission(admin, ip, listUrl.toString(), false, `fetch ${res.status}`);
+      await logSubmission(admin, ip, name, listUrl.toString(), false, `fetch ${res.status}`);
       return jsonResponse(
         { ok: false, error: `사이트 응답 오류(${res.status})입니다. 주소를 다시 확인해 주세요.` },
         400
@@ -195,7 +198,7 @@ Deno.serve(async (req) => {
     }
     html = await res.text();
   } catch (e) {
-    await logSubmission(admin, ip, listUrl.toString(), false, String(e));
+    await logSubmission(admin, ip, name, listUrl.toString(), false, String(e));
     return jsonResponse(
       { ok: false, error: "사이트에 접속하지 못했습니다. 주소를 다시 확인해 주세요." },
       400
@@ -206,7 +209,7 @@ Deno.serve(async (req) => {
 
   const parsed = await parseJwxeBoard(html, listUrl.toString());
   if (parsed.length === 0) {
-    await logSubmission(admin, ip, listUrl.toString(), false, "no items parsed");
+    await logSubmission(admin, ip, name, listUrl.toString(), false, "no items parsed");
     return jsonResponse(
       {
         ok: false,
@@ -224,7 +227,7 @@ Deno.serve(async (req) => {
       { onConflict: "list_url" }
     );
   if (siteError) {
-    await logSubmission(admin, ip, listUrl.toString(), false, siteError.message);
+    await logSubmission(admin, ip, name, listUrl.toString(), false, siteError.message);
     return jsonResponse({ ok: false, error: "사이트 저장 중 오류가 발생했습니다." }, 500);
   }
 
@@ -258,10 +261,10 @@ Deno.serve(async (req) => {
 
   const { error: noticesError } = await admin.from("notices").upsert(rows, { onConflict: "id" });
   if (noticesError) {
-    await logSubmission(admin, ip, listUrl.toString(), false, noticesError.message);
+    await logSubmission(admin, ip, name, listUrl.toString(), false, noticesError.message);
     return jsonResponse({ ok: false, error: "공지 저장 중 오류가 발생했습니다." }, 500);
   }
 
-  await logSubmission(admin, ip, listUrl.toString(), true, `parsed ${rows.length}`);
+  await logSubmission(admin, ip, name, listUrl.toString(), true, `parsed ${rows.length}`);
   return jsonResponse({ ok: true, name, count: rows.length });
 });

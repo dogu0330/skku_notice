@@ -85,25 +85,20 @@ FALLBACK_SITES = [
 ]
 
 
-def load_site_configs():
-    """crawler/sites.json 에서 사이트 목록을 읽어 {이름: 설정} 형태로 돌려준다.
+def normalize_supabase_base(url):
+    """대시보드 예제를 복붙해 /rest/v1 이 섞여 들어와도 프로젝트 기본 URL로 정리한다."""
+    base = (url or "").rstrip("/")
+    for suffix in ("/rest/v1", "/rest"):
+        if base.lower().endswith(suffix):
+            base = base[: -len(suffix)]
+            break
+    return base
 
-    학과 사이트를 추가할 때 파이썬 코드를 고칠 필요 없이
-    sites.json 에 항목 한 줄만 넣으면 되도록 분리해 둔 것이다.
-    """
-    raw = None
-    try:
-        with open(SITES_PATH, "r", encoding="utf-8") as f:
-            raw = json.load(f)
-    except (OSError, ValueError) as exc:
-        print("[!] sites.json 을 읽지 못해 기본 목록을 사용합니다: %s" % exc)
 
-    entries = FALLBACK_SITES
-    if isinstance(raw, dict) and isinstance(raw.get("sites"), list):
-        entries = raw["sites"]
-    elif isinstance(raw, list):  # sites 키 없이 배열만 적은 경우도 허용
-        entries = raw
-
+def build_site_configs(entries):
+    """[{name, list_url, preset, page_size, selectors?}, ...] 목록을 크롤러가 쓰는
+    {이름: 설정} 딕셔너리로 변환한다. sites.json 항목과 Supabase sites 테이블 행 모두
+    이 형태로 들어온다."""
     configs = {}
     for entry in entries:
         name = (entry.get("name") or "").strip()
@@ -124,6 +119,61 @@ def load_site_configs():
             "page_size": entry.get("page_size", 10),  # article.offset 증가 단위
         }
     return configs
+
+
+def load_sites_from_supabase():
+    """Supabase sites 테이블에서 활성화된 사이트 목록을 가져온다.
+    사용자가 화면에서 직접 추가한 학과도 이 테이블에 들어있으므로,
+    Supabase 연동이 켜져 있으면 sites.json 대신 이쪽을 우선 사용해
+    자동 크롤링(GitHub Actions 등)이 새로 추가된 사이트도 함께 돌게 한다."""
+    url = os.environ.get("SUPABASE_URL")
+    key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
+    if not url or not key:
+        return None
+
+    endpoint = normalize_supabase_base(url) + "/rest/v1/sites"
+    headers = {"apikey": key, "Authorization": "Bearer %s" % key}
+    params = {"select": "name,list_url,preset,page_size", "is_active": "eq.true"}
+    try:
+        res = requests.get(endpoint, headers=headers, params=params, timeout=15)
+        res.raise_for_status()
+        rows = res.json()
+    except (requests.RequestException, ValueError) as exc:
+        print("[!] Supabase sites 조회 실패, sites.json 으로 대체합니다: %s" % exc)
+        return None
+
+    if not isinstance(rows, list) or not rows:
+        print("[!] Supabase sites 테이블이 비어 있어 sites.json 으로 대체합니다.")
+        return None
+    return rows
+
+
+def load_sites_json():
+    raw = None
+    try:
+        with open(SITES_PATH, "r", encoding="utf-8") as f:
+            raw = json.load(f)
+    except (OSError, ValueError) as exc:
+        print("[!] sites.json 을 읽지 못해 기본 목록을 사용합니다: %s" % exc)
+
+    if isinstance(raw, dict) and isinstance(raw.get("sites"), list):
+        return raw["sites"]
+    if isinstance(raw, list):  # sites 키 없이 배열만 적은 경우도 허용
+        return raw
+    return FALLBACK_SITES
+
+
+def load_site_configs():
+    """수집할 사이트 목록을 {이름: 설정} 형태로 돌려준다.
+
+    SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY 가 설정돼 있으면 Supabase sites
+    테이블을 우선 사용하고(사용자가 추가한 학과 포함), 없거나 비어 있으면
+    crawler/sites.json 으로 대체한다.
+    """
+    entries = load_sites_from_supabase()
+    if entries is None:
+        entries = load_sites_json()
+    return build_site_configs(entries)
 
 
 SITE_CONFIGS = load_site_configs()
@@ -294,13 +344,7 @@ def sync_to_supabase(notices):
         print("[i] SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY 가 없어 Supabase 동기화를 건너뜁니다.")
         return
 
-    # 대시보드 예제를 그대로 복붙해 /rest/v1 까지 포함된 URL을 넣는 실수를 방어한다.
-    base = url.rstrip("/")
-    for suffix in ("/rest/v1", "/rest"):
-        if base.lower().endswith(suffix):
-            base = base[: -len(suffix)]
-            break
-    endpoint = base + "/rest/v1/notices"
+    endpoint = normalize_supabase_base(url) + "/rest/v1/notices"
     headers = {
         "apikey": key,
         "Authorization": "Bearer %s" % key,

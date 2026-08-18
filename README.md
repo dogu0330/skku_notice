@@ -148,9 +148,37 @@ python crawler/crawl.py --sync-existing
 - **속도 제한**: 같은 접속 IP가 5분 안에 5번 넘게 시도하면 잠깐 막습니다.
   (`site_submissions` 테이블에 시도 기록이 쌓이는데, 공개 조회 권한은 없습니다.)
 
-### 알아둘 점 (현재 한계)
+사이트를 추가하는 순간에는 딱 한 번만 크롤링됩니다. 그 이후로 새 공지를 계속 받아오는 건
+아래 자동 크롤링(GitHub Actions)이 담당합니다.
 
-지금은 사용자가 사이트를 추가하는 그 순간에 딱 한 번 크롤링합니다. 이후 그 학과의 새 공지를
-계속 자동으로 받아오려면, 기존 `crawler/crawl.py` (사이트당 1회 실행 크롤러)가 Supabase
-`sites` 테이블도 함께 읽어오도록 확장하고, 그걸 정기적으로 돌려주는 스케줄러(예: GitHub
-Actions cron)가 있어야 합니다. 지금 범위에는 포함돼 있지 않습니다.
+## 자동 크롤링 (GitHub Actions)
+
+`crawler/crawl.py` 는 이제 `SUPABASE_URL`/`SUPABASE_SERVICE_ROLE_KEY` 가 설정돼 있으면
+`crawler/sites.json` 대신 Supabase `sites` 테이블을 읽습니다. 즉 사용자가 화면에서 추가한
+학과도 이 목록에 포함되므로, 아래 워크플로 하나로 기존 사이트 + 사용자 추가 사이트가
+전부 정기적으로 다시 크롤링됩니다.
+
+`.github/workflows/crawl.yml` 이 하루 3번(한국시간 07/13/19시) 자동으로 실행되어
+크롤링 → `data/notices.json`/`data/notices.js` 갱신 → Supabase `notices` 테이블 동기화 →
+바뀐 JSON 파일을 저장소에 자동 커밋까지 합니다.
+
+### 설정
+
+GitHub 저장소 → **Settings → Secrets and variables → Actions → New repository secret** 에서
+두 개를 등록하세요 (Vercel에 등록한 것과 같은 값이지만, GitHub Actions는 별도로 등록해야 합니다).
+
+| 이름 | 값 |
+|---|---|
+| `SUPABASE_URL` | Project URL |
+| `SUPABASE_SERVICE_ROLE_KEY` | service_role 키 (비밀) |
+
+등록만 하면 별도 작업 없이 다음 예정 시각에 자동 실행됩니다. 바로 테스트해보고 싶으면
+저장소의 **Actions 탭 → 공지 자동 크롤링 → Run workflow** 로 수동 실행할 수 있습니다.
+
+### 알아둘 점
+
+- 크롤러가 커밋까지 하기 때문에 워크플로 권한을 `contents: write` 로 설정해 뒀습니다.
+  저장소 Settings → Actions → General → Workflow permissions 가 "Read and write"로 돼
+  있어야 정상적으로 커밋/푸시됩니다(기본값이 그렇지 않다면 여기서 바꿔야 합니다).
+- Supabase 비밀번호/키를 등록하기 전까지는 크롤러가 `crawler/sites.json` 으로 자동
+  대체되어 동작하므로, 시크릿을 아직 안 넣었어도 워크플로 자체는 실패하지 않습니다.

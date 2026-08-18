@@ -61,11 +61,15 @@ on conflict (list_url) do nothing;
 create table if not exists public.site_submissions (
   id          bigint generated always as identity primary key,
   client_ip   text,
+  name        text,
   list_url    text not null,
   ok          boolean not null,
   message     text,
   created_at  timestamptz not null default now()
 );
+-- 이미 만들어진 뒤에 스키마를 다시 적용하는 경우를 위한 보강
+alter table public.site_submissions add column if not exists name text;
+
 create index if not exists site_submissions_ip_time_idx
   on public.site_submissions (client_ip, created_at desc);
 
