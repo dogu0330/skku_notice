@@ -1,14 +1,24 @@
 /* 자동 생성 파일 - crawler/crawl.py 실행 결과 */
 window.NOTICES = [
   {
+    "id": "de178314a3263fda",
+    "title": "성균관대학교 의과대학 첨단재생 줄기세포 연구실 _﻿연구비 행정 직원 채용 공고",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-08-20",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139234",
+    "crawled_at": "2026-08-19T22:13:03+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
+  },
+  {
     "id": "a06ff04d38e64e52",
     "title": "제5회 SKKU 메이킹 해커톤 참가자 모집 안내",
     "source_site": "본교",
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139173",
-    "crawled_at": "2026-08-19T10:17:06+00:00",
-    "first_seen_at": "2026-08-18T22:10:43+00:00"
+    "crawled_at": "2026-08-19T22:13:03+00:00",
+    "first_seen_at": "2026-08-19T10:17:06+00:00"
   },
   {
     "id": "565220e58aff4359",
@@ -17,8 +27,8 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139201",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T04:25:35+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T10:17:07+00:00"
   },
   {
     "id": "2c05a863b99d12e8",
@@ -37,7 +47,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139214",
-    "crawled_at": "2026-08-19T10:17:06+00:00",
+    "crawled_at": "2026-08-19T22:13:03+00:00",
     "first_seen_at": "2026-08-19T10:17:06+00:00"
   },
   {
@@ -47,8 +57,8 @@ window.NOTICES = [
     "category": "장학",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=138056",
-    "crawled_at": "2026-08-19T10:17:06+00:00",
-    "first_seen_at": "2026-08-19T04:25:35+00:00"
+    "crawled_at": "2026-08-19T22:13:03+00:00",
+    "first_seen_at": "2026-08-19T10:17:06+00:00"
   },
   {
     "id": "aabb292bc623b869",
@@ -57,8 +67,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=138688",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "7f1ac71b91856ae6",
@@ -67,8 +77,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139202",
-    "crawled_at": "2026-08-19T10:17:06+00:00",
-    "first_seen_at": "2026-08-19T04:25:35+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T10:17:06+00:00"
   },
   {
     "id": "3ac921d06103ece4",
@@ -77,7 +87,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=138730",
-    "crawled_at": "2026-08-19T10:17:06+00:00",
+    "crawled_at": "2026-08-19T22:13:03+00:00",
     "first_seen_at": "2026-08-19T10:17:06+00:00"
   },
   {
@@ -87,8 +97,8 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139198",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T04:25:35+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T10:17:07+00:00"
   },
   {
     "id": "fad037bfec9c577a",
@@ -97,8 +107,8 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139199",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T04:25:35+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T10:17:07+00:00"
   },
   {
     "id": "898dbe5992622a9a",
@@ -107,8 +117,8 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139197",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T04:25:35+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T10:17:07+00:00"
   },
   {
     "id": "68900ab3f6a5d88b",
@@ -117,8 +127,8 @@ window.NOTICES = [
     "category": "장학",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139191",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T04:25:35+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T10:17:07+00:00"
   },
   {
     "id": "ec47adc24ce7e163",
@@ -127,8 +137,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=136845",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T04:25:36+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T10:17:07+00:00"
   },
   {
     "id": "60c29e1b90e3eb8d",
@@ -137,7 +147,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139101",
-    "crawled_at": "2026-08-19T10:17:06+00:00",
+    "crawled_at": "2026-08-19T22:13:03+00:00",
     "first_seen_at": "2026-08-19T10:17:06+00:00"
   },
   {
@@ -147,7 +157,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139162",
-    "crawled_at": "2026-08-19T10:17:06+00:00",
+    "crawled_at": "2026-08-19T22:13:03+00:00",
     "first_seen_at": "2026-08-19T10:17:06+00:00"
   },
   {
@@ -157,8 +167,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139111",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T04:25:36+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T10:17:07+00:00"
   },
   {
     "id": "992ee1607548e908",
@@ -167,8 +177,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139203",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "a76ebf7333bcc134",
@@ -177,8 +187,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139205",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "ba836987a634d1b7",
@@ -207,8 +217,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=138856",
-    "crawled_at": "2026-08-19T10:17:06+00:00",
-    "first_seen_at": "2026-08-18T22:10:43+00:00"
+    "crawled_at": "2026-08-19T22:13:03+00:00",
+    "first_seen_at": "2026-08-19T10:17:06+00:00"
   },
   {
     "id": "50fff7299e37c2bf",
@@ -217,8 +227,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=137181",
-    "crawled_at": "2026-08-19T10:17:06+00:00",
-    "first_seen_at": "2026-08-19T04:25:35+00:00"
+    "crawled_at": "2026-08-19T22:13:03+00:00",
+    "first_seen_at": "2026-08-19T10:17:06+00:00"
   },
   {
     "id": "a8b69c87b4e979c3",
@@ -237,8 +247,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139207",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "4f90b7b1e777e03c",
@@ -247,8 +257,8 @@ window.NOTICES = [
     "category": "장학",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139196",
-    "crawled_at": "2026-08-19T10:17:06+00:00",
-    "first_seen_at": "2026-08-19T04:25:35+00:00"
+    "crawled_at": "2026-08-19T22:13:03+00:00",
+    "first_seen_at": "2026-08-19T10:17:06+00:00"
   },
   {
     "id": "f90ade3b4e00c85d",
@@ -257,8 +267,8 @@ window.NOTICES = [
     "category": "장학",
     "published_date": "2026-08-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139195",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T04:25:35+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T10:17:07+00:00"
   },
   {
     "id": "003268316430010b",
@@ -307,8 +317,8 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-08-18",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139163",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "db4d140c8147d574",
@@ -317,8 +327,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-18",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139188",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "acb046fb325c61c2",
@@ -377,8 +387,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-18",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139096",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T04:25:36+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T10:17:07+00:00"
   },
   {
     "id": "bc4f8faaa8ab8f97",
@@ -567,8 +577,8 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-08-18",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139081",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "b7024d8fa55e13d3",
@@ -637,8 +647,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-13",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139100",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "ace2113ae4cd69f0",
@@ -647,8 +657,8 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-08-13",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=138988",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "0a296106efa920e9",
@@ -667,8 +677,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-12",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139098",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "45c94eeaf1afd3fd",
@@ -677,8 +687,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-12",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139097",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "a2e1c3a83d50647a",
@@ -687,8 +697,8 @@ window.NOTICES = [
     "category": "취업",
     "published_date": "2026-08-11",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139063",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "a1f4b148ea84b96a",
@@ -707,8 +717,8 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-08-11",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139080",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "08f8426809ba0741",
@@ -737,8 +747,8 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-08-10",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139029",
-    "crawled_at": "2026-08-19T10:17:07+00:00",
-    "first_seen_at": "2026-08-19T10:17:06+00:00"
+    "crawled_at": "2026-08-19T22:13:05+00:00",
+    "first_seen_at": "2026-08-19T22:13:03+00:00"
   },
   {
     "id": "0011b5e062497096",
