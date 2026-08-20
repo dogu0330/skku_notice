@@ -38,11 +38,18 @@ function cleanText(text: string | null | undefined) {
   return (text ?? "").replace(/\s+/g, " ").trim();
 }
 
+// crawler/crawl.py 의 canonicalize() 와 같은 규칙이어야 한다. 한쪽만 고치면
+// 사용자가 추가한 사이트에서 다시 중복 공지가 쌓인다.
+const ITEM_ID_RE = /(itemId=)([0-9A-Fa-f]{32})[0-9A-Za-z]+(?=&|$)/;
+
 function canonicalizeUrl(raw: string) {
   const u = new URL(raw);
   u.searchParams.delete("article.offset");
   u.searchParams.delete("articleLimit");
-  return u.toString();
+  // 일부 게시판은 itemId 뒤에 접속할 때마다 바뀌는 임의 문자열을 붙인다.
+  // 앞 32자리만 공지마다 고정이므로 그 부분만 남긴다.
+  // (URL 객체를 거치면 인코딩이 바뀔 수 있어 문자열 단계에서 처리한다)
+  return u.toString().replace(ITEM_ID_RE, "$1$2");
 }
 
 async function sha1Hex16(input: string) {

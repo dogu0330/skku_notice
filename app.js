@@ -21,6 +21,23 @@ const state = {
   keyword: "",
 };
 
+/* ---------- 측정 (Google Analytics) ----------
+   index.html 의 gtag 태그는 방문자 수·체류시간·스크롤 같은 기본 지표만 자동으로 잡는다.
+   필터 버튼 클릭처럼 화면 안에서만 일어나는 행동은 여기서 직접 보내야 기록된다.
+   이벤트 이름은 기획서(PRD) 8장 설계를 따른다.
+
+   주의: 아래 파라미터(filter_type 등)는 GA4 관리자 화면에서 '맞춤 측정기준'으로
+   등록해야 보고서에서 값별로 쪼개 볼 수 있다. 등록 전에는 이벤트 발생 횟수만 보인다. */
+function track(eventName, params) {
+  // 광고 차단기 등으로 gtag 가 로드되지 않은 경우에도 화면 동작은 그대로 유지한다
+  if (typeof window.gtag !== "function") return;
+  window.gtag("event", eventName, params || {});
+}
+
+function trackFilter(filterType, filterValue) {
+  track("filter_apply", { filter_type: filterType, filter_value: filterValue });
+}
+
 const $ = (id) => document.getElementById(id);
 const $list = $("notice-list");
 const $empty = $("empty");
@@ -182,6 +199,7 @@ function renderSiteFilter() {
     box.appendChild(
       makeChip(name, state.site === name, () => {
         state.site = name;
+        trackFilter("site", name);
         renderSiteFilter();
         renderList();
       })
@@ -226,6 +244,7 @@ function renderCategoryFilter() {
     box.appendChild(
       makeChip(name, state.category === name, () => {
         state.category = name;
+        trackFilter("category", name);
         renderCategoryFilter();
         renderList();
       })
@@ -265,6 +284,7 @@ function renderCustomFilter() {
   box.appendChild(
     makeChip(ALL, state.customId === null, () => {
       state.customId = null;
+      trackFilter("custom", ALL);
       renderCustomFilter();
       renderList();
     })
@@ -285,6 +305,7 @@ function renderCustomFilter() {
       active,
       () => {
         state.customId = active ? null : custom.id;
+        trackFilter("custom", active ? ALL : custom.name);
         renderCustomFilter();
         renderList();
       },
@@ -343,6 +364,15 @@ function renderList() {
     const date = document.createElement("span");
     date.textContent = n.published_date || "";
     meta.appendChild(date);
+
+    // 공지 클릭은 외부 링크라 GA4 가 자동으로도 잡지만, 자동 기록에는 주소만 남아
+    // 어느 출처·카테고리의 공지였는지 알 수 없다. 그래서 따로 보낸다.
+    a.addEventListener("click", () => {
+      track("notice_click", {
+        source_site: n.source_site || "(없음)",
+        notice_category: n.category || "(없음)",
+      });
+    });
 
     a.appendChild(title);
     a.appendChild(meta);
@@ -487,6 +517,7 @@ $("add-site-form").addEventListener("submit", async (e) => {
 });
 
 let debounce;
+let searchTrackTimer;
 $keyword.addEventListener("input", (e) => {
   clearTimeout(debounce);
   const value = e.target.value;
@@ -494,6 +525,14 @@ $keyword.addEventListener("input", (e) => {
     state.keyword = value;
     renderList();
   }, 120);
+
+  // 글자 하나마다 보내면 한 번의 검색이 여러 건으로 잡히므로,
+  // 타이핑이 멈춘 뒤에 한 번만 보낸다
+  clearTimeout(searchTrackTimer);
+  searchTrackTimer = setTimeout(() => {
+    const kw = value.trim();
+    if (kw) trackFilter("search", kw);
+  }, 800);
 });
 
 $("reset").addEventListener("click", () => {
@@ -512,4 +551,6 @@ $("reset").addEventListener("click", () => {
   collectFacets();
   renderUpdated();
   renderAll();
+  // 가설 H1·H3 의 분모. "공지 목록을 실제로 본 횟수"
+  track("feed_view", { notice_count: state.notices.length });
 })();

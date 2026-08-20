@@ -191,10 +191,19 @@ HEADERS = {
 DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
 
 
+# 일부 게시판(공과대학·문과대학 등)은 itemId 뒤에 접속할 때마다 바뀌는 임의 문자열을
+# 덧붙인다. 앞 32자리는 공지마다 고정이고 그 뒤만 매번 달라진다.
+#     ...itemId=BCEC10BDB95127CE67BDD3CEA419C933ZPTDPZ   ← 1차 수집
+#     ...itemId=BCEC10BDB95127CE67BDD3CEA419C933YAMYOO   ← 2차 수집 (같은 공지)
+# 이걸 그대로 두면 수집할 때마다 같은 공지가 새 URL로 보여서 계속 추가된다.
+ITEM_ID_RE = re.compile(r"(itemId=)([0-9A-Fa-f]{32})[0-9A-Za-z]+(?=&|$)")
+
+
 def canonicalize(url):
-    """목록 페이지마다 붙는 offset 파라미터를 제거해
-    같은 공지가 다른 URL로 중복 저장되는 것을 막는다."""
-    return re.sub(r"&(article\.offset|articleLimit)=[^&]*", "", url)
+    """목록 페이지마다 붙는 offset 파라미터와, 접속할 때마다 바뀌는 itemId 꼬리를
+    제거해 같은 공지가 다른 URL로 중복 저장되는 것을 막는다."""
+    url = re.sub(r"&(article\.offset|articleLimit)=[^&]*", "", url)
+    return ITEM_ID_RE.sub(r"\1\2", url)
 
 
 def make_id(url):
@@ -291,23 +300,58 @@ def load_existing():
         return []
 
 
+def _earliest(*values):
+    vals = [v for v in values if v]
+    return min(vals) if vals else None
+
+
+def _latest(*values):
+    vals = [v for v in values if v]
+    return max(vals) if vals else None
+
+
+def normalize_existing(existing):
+    """이미 저장된 공지들의 URL을 지금 규칙으로 다시 정규화해 {정규 URL: 공지} 로 만든다.
+
+    정규화 규칙이 바뀌기 전에 저장돼 여러 건으로 쪼개져 있던 같은 공지가
+    여기서 한 건으로 합쳐진다. 합칠 때 처음 본 시각은 가장 이른 값,
+    마지막 수집 시각은 가장 늦은 값을 남긴다."""
+    merged = {}
+    for raw in existing:
+        url = canonicalize(raw.get("original_url") or "")
+        if not url:
+            continue
+        item = dict(raw)
+        item["original_url"] = url
+        item["id"] = make_id(url)
+
+        prev = merged.get(url)
+        if prev:
+            item["first_seen_at"] = _earliest(
+                prev.get("first_seen_at"),
+                prev.get("crawled_at"),
+                item.get("first_seen_at"),
+                item.get("crawled_at"),
+            )
+            item["crawled_at"] = _latest(prev.get("crawled_at"), item.get("crawled_at"))
+        merged[url] = item
+    return merged
+
+
 def upsert(existing, incoming):
     """original_url 기준으로 병합. 기존 항목은 새 정보로 갱신하고, 새 항목은 추가한다."""
-    merged = {}
-    for item in existing:
-        url = item.get("original_url")
-        if url:
-            merged[url] = item
+    merged = normalize_existing(existing)
+    collapsed = len(existing) - len(merged)  # 정규화로 합쳐진 중복 건수
 
     added, updated = 0, 0
     for item in incoming:
         url = item["original_url"]
         if url in merged:
-            first_seen = merged[url].get("crawled_at")
+            first_seen = merged[url].get("first_seen_at") or merged[url].get("crawled_at")
             merged[url] = dict(item)
             # 처음 수집한 시각을 유지하면 "언제부터 있던 공지인지" 추적할 수 있다
             merged[url]["crawled_at"] = item["crawled_at"]
-            merged[url]["first_seen_at"] = merged[url].get("first_seen_at") or first_seen
+            merged[url]["first_seen_at"] = first_seen or item["crawled_at"]
             updated += 1
         else:
             item = dict(item)
@@ -320,7 +364,7 @@ def upsert(existing, incoming):
         key=lambda n: (n.get("published_date") or "", n.get("title") or ""),
         reverse=True,
     )
-    return result, added, updated
+    return result, added, updated, collapsed
 
 
 def save(notices):
@@ -384,6 +428,63 @@ def sync_to_supabase(notices):
     print("[+] Supabase 동기화 완료: %d건 → %s" % (len(notices), url))
 
 
+def prune_supabase_stale():
+    """정규화 규칙이 바뀌기 전에 저장된 옛 URL 행을 Supabase 에서 지운다.
+
+    지우는 대상은 'original_url 이 지금 규칙으로 정규화한 결과와 다른 행' 뿐이다.
+    제대로 저장된 공지는 이 조건에 걸리지 않으므로 건드리지 않는다.
+    sync_to_supabase 로 정규 URL 행을 먼저 올린 뒤에 호출해야 한다."""
+    url = os.environ.get("SUPABASE_URL")
+    key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
+    if not url or not key:
+        return
+
+    endpoint = normalize_supabase_base(url) + "/rest/v1/notices"
+    headers = {"apikey": key, "Authorization": "Bearer %s" % key}
+
+    stale = []
+    offset, page_size = 0, 1000
+    while True:
+        params = {"select": "id,original_url", "limit": page_size, "offset": offset}
+        try:
+            res = requests.get(endpoint, headers=headers, params=params, timeout=30)
+            res.raise_for_status()
+            rows = json.loads(res.content.decode("utf-8"))
+        except (requests.RequestException, ValueError, UnicodeDecodeError) as exc:
+            print("[!] Supabase 정리용 조회 실패, 건너뜁니다: %s" % exc)
+            return
+        if not isinstance(rows, list) or not rows:
+            break
+        for row in rows:
+            original = row.get("original_url") or ""
+            if original and canonicalize(original) != original:
+                stale.append(row["id"])
+        if len(rows) < page_size:
+            break
+        offset += page_size
+
+    if not stale:
+        print("[i] Supabase 에 정리할 옛 중복 행이 없습니다.")
+        return
+
+    delete_headers = dict(headers)
+    deleted = 0
+    for i in range(0, len(stale), 50):
+        batch = stale[i : i + 50]
+        params = {"id": "in.(%s)" % ",".join(batch)}
+        try:
+            res = requests.delete(endpoint, headers=delete_headers, params=params, timeout=30)
+        except requests.RequestException as exc:
+            print("[!] Supabase 중복 삭제 요청 실패: %s" % exc)
+            return
+        if not res.ok:
+            print("[!] Supabase 중복 삭제 실패(%d): %s" % (res.status_code, res.text[:300]))
+            return
+        deleted += len(batch)
+
+    print("[+] Supabase 옛 중복 행 %d건을 삭제했습니다." % deleted)
+
+
 def main():
     parser = argparse.ArgumentParser(description="성균관대 공지 통합 크롤러")
     parser.add_argument("--pages", type=int, default=1, help="사이트당 수집할 페이지 수")
@@ -398,6 +499,11 @@ def main():
         action="store_true",
         help="새로 크롤링하지 않고, data/notices.json 을 그대로 Supabase 에 동기화만 한다",
     )
+    parser.add_argument(
+        "--no-prune",
+        action="store_true",
+        help="Supabase 에 남아 있는 옛 중복 행을 지우지 않는다 (기본은 지운다)",
+    )
     args = parser.parse_args()
 
     if args.sync_existing:
@@ -405,7 +511,13 @@ def main():
         if not existing:
             print("[!] data/notices.json 이 비어 있습니다.")
             return 1
-        sync_to_supabase(existing)
+        merged, _, _, collapsed = upsert(existing, [])
+        if collapsed:
+            save(merged)
+            print("[+] 중복 %d건을 합쳤습니다: %d건 → %d건" % (collapsed, len(existing), len(merged)))
+        sync_to_supabase(merged)
+        if not args.no_prune:
+            prune_supabase_stale()
         return 0
 
     incoming = []
@@ -422,13 +534,15 @@ def main():
         return 1
 
     existing = load_existing()
-    merged, added, updated = upsert(existing, incoming)
+    merged, added, updated, collapsed = upsert(existing, incoming)
     save(merged)
     print(
-        "[+] 저장 완료: 총 %d건 (신규 %d, 갱신 %d) → %s"
-        % (len(merged), added, updated, JSON_PATH)
+        "[+] 저장 완료: 총 %d건 (신규 %d, 갱신 %d%s) → %s"
+        % (len(merged), added, updated, ", 중복 합침 %d" % collapsed if collapsed else "", JSON_PATH)
     )
     sync_to_supabase(merged)
+    if not args.no_prune:
+        prune_supabase_stale()
     return 0
 
 
