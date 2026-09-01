@@ -7,7 +7,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139472",
-    "crawled_at": "2026-09-01T08:57:59+00:00",
+    "crawled_at": "2026-09-01T14:22:16+00:00",
     "first_seen_at": "2026-09-01T08:57:59+00:00"
   },
   {
@@ -17,7 +17,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139256",
-    "crawled_at": "2026-09-01T08:58:01+00:00",
+    "crawled_at": "2026-09-01T14:22:17+00:00",
     "first_seen_at": "2026-08-20T10:18:04+00:00"
   },
   {
@@ -27,7 +27,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139483",
-    "crawled_at": "2026-09-01T08:57:59+00:00",
+    "crawled_at": "2026-09-01T14:22:16+00:00",
     "first_seen_at": "2026-09-01T08:57:59+00:00"
   },
   {
@@ -77,7 +77,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139457",
-    "crawled_at": "2026-09-01T08:57:59+00:00",
+    "crawled_at": "2026-09-01T14:22:16+00:00",
     "first_seen_at": "2026-08-31T10:12:05+00:00"
   },
   {
@@ -97,7 +97,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139463",
-    "crawled_at": "2026-09-01T08:57:59+00:00",
+    "crawled_at": "2026-09-01T14:22:16+00:00",
     "first_seen_at": "2026-08-31T10:12:05+00:00"
   },
   {
@@ -107,7 +107,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139479",
-    "crawled_at": "2026-09-01T08:57:59+00:00",
+    "crawled_at": "2026-09-01T14:22:16+00:00",
     "first_seen_at": "2026-09-01T08:57:59+00:00"
   },
   {
@@ -117,7 +117,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139438",
-    "crawled_at": "2026-09-01T08:57:59+00:00",
+    "crawled_at": "2026-09-01T14:22:17+00:00",
     "first_seen_at": "2026-08-31T06:31:37+00:00"
   },
   {
@@ -127,7 +127,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139203",
-    "crawled_at": "2026-09-01T08:58:01+00:00",
+    "crawled_at": "2026-09-01T14:22:17+00:00",
     "first_seen_at": "2026-08-20T04:25:04+00:00"
   },
   {
@@ -137,7 +137,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139205",
-    "crawled_at": "2026-09-01T08:58:01+00:00",
+    "crawled_at": "2026-09-01T14:22:17+00:00",
     "first_seen_at": "2026-08-20T04:25:04+00:00"
   },
   {
@@ -147,7 +147,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139450",
-    "crawled_at": "2026-09-01T08:57:59+00:00",
+    "crawled_at": "2026-09-01T14:22:16+00:00",
     "first_seen_at": "2026-08-31T06:31:37+00:00"
   },
   {
@@ -157,7 +157,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139490",
-    "crawled_at": "2026-09-01T08:57:59+00:00",
+    "crawled_at": "2026-09-01T14:22:16+00:00",
     "first_seen_at": "2026-09-01T08:57:59+00:00"
   },
   {
@@ -167,7 +167,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139421",
-    "crawled_at": "2026-09-01T08:58:01+00:00",
+    "crawled_at": "2026-09-01T14:22:17+00:00",
     "first_seen_at": "2026-09-01T08:58:01+00:00"
   },
   {
@@ -177,7 +177,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139478",
-    "crawled_at": "2026-09-01T08:57:59+00:00",
+    "crawled_at": "2026-09-01T14:22:16+00:00",
     "first_seen_at": "2026-09-01T08:57:59+00:00"
   },
   {
@@ -227,7 +227,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139251",
-    "crawled_at": "2026-09-01T08:58:01+00:00",
+    "crawled_at": "2026-09-01T14:22:17+00:00",
     "first_seen_at": "2026-08-20T04:25:04+00:00"
   },
   {
@@ -237,7 +237,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139275",
-    "crawled_at": "2026-09-01T08:58:01+00:00",
+    "crawled_at": "2026-09-01T14:22:17+00:00",
     "first_seen_at": "2026-08-21T04:27:22+00:00"
   },
   {
@@ -251,13 +251,23 @@ window.NOTICES = [
     "first_seen_at": "2026-09-01T00:52:09+00:00"
   },
   {
+    "id": "3d2c5b686fae3e3d",
+    "title": "AI응용공학과 2027학년도 전기 입학설명회 개최",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-09-01",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139302",
+    "crawled_at": "2026-09-01T14:22:16+00:00",
+    "first_seen_at": "2026-08-23T22:10:00+00:00"
+  },
+  {
     "id": "783669a9e9a2ec53",
     "title": "2026학년도 2학기 석사과정 수업연한단축 신청 안내",
     "source_site": "본교",
     "category": "학사",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139237",
-    "crawled_at": "2026-09-01T08:58:01+00:00",
+    "crawled_at": "2026-09-01T14:22:17+00:00",
     "first_seen_at": "2026-08-20T04:25:04+00:00"
   },
   {
@@ -277,7 +287,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139258",
-    "crawled_at": "2026-09-01T08:58:01+00:00",
+    "crawled_at": "2026-09-01T14:22:17+00:00",
     "first_seen_at": "2026-08-20T10:18:04+00:00"
   },
   {
@@ -287,7 +297,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139413",
-    "crawled_at": "2026-09-01T08:58:01+00:00",
+    "crawled_at": "2026-09-01T14:22:17+00:00",
     "first_seen_at": "2026-08-28T21:01:24+00:00"
   },
   {
@@ -297,7 +307,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-09-01",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=138581",
-    "crawled_at": "2026-09-01T08:57:59+00:00",
+    "crawled_at": "2026-09-01T14:22:16+00:00",
     "first_seen_at": "2026-09-01T08:57:59+00:00"
   },
   {
@@ -449,16 +459,6 @@ window.NOTICES = [
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139066",
     "crawled_at": "2026-09-01T00:52:11+00:00",
     "first_seen_at": "2026-08-27T14:50:24+00:00"
-  },
-  {
-    "id": "3d2c5b686fae3e3d",
-    "title": "AI응용공학과 2027학년도 전기 입학설명회 개최",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-08-31",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139302",
-    "crawled_at": "2026-08-31T10:12:06+00:00",
-    "first_seen_at": "2026-08-23T22:10:00+00:00"
   },
   {
     "id": "9a2b61b647830e51",
