@@ -1,24 +1,234 @@
 /* 자동 생성 파일 - crawler/crawl.py 실행 결과 */
 window.NOTICES = [
   {
+    "id": "8dbf235c9bec9372",
+    "title": "인공지능혁신융합대학사업단] 2026년 09월 07일 월요일 전문가 특강 사전신청 안내",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139256",
+    "crawled_at": "2026-09-03T08:21:20+00:00",
+    "first_seen_at": "2026-08-20T10:18:04+00:00"
+  },
+  {
+    "id": "fec09865badd3772",
+    "title": "성균관대학교(피지컬AI사업단) 산학교수 공개채용 안내(9/7일까지)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139581",
+    "crawled_at": "2026-09-03T08:21:20+00:00",
+    "first_seen_at": "2026-09-03T08:21:20+00:00"
+  },
+  {
+    "id": "dde1b81da7188bcd",
+    "title": "성균관대학교(자연과학캠퍼스) 피지컬AI사업단 행정직원 채용공고 (~9월6일까지)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139373",
+    "crawled_at": "2026-09-03T08:21:20+00:00",
+    "first_seen_at": "2026-08-26T10:23:18+00:00"
+  },
+  {
+    "id": "dee194bef02c6d06",
+    "title": "독일어권사회문화연구소 국제 컨퍼런스 \"생성형 AI 시대의 비관주의적 휴머니즘을 넘어: 연구, 교육, 사회의 전환\"(9월 11일 13시~)",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139350",
+    "crawled_at": "2026-09-03T08:21:20+00:00",
+    "first_seen_at": "2026-08-25T10:20:01+00:00"
+  },
+  {
+    "id": "2284abf361412f28",
+    "title": "「제2회 ZYXCAD AX 경진대회」 개최 안내",
+    "source_site": "본교",
+    "category": "일반",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139559",
+    "crawled_at": "2026-09-03T08:21:20+00:00",
+    "first_seen_at": "2026-09-03T08:21:20+00:00"
+  },
+  {
+    "id": "aadd4bbb67cbc561",
+    "title": "[행사/세미나] 식품의약품안전평가원 : 2026 인체중심 독성평가(NAMs) 기반 규제과학 국제 심포지엄 개최 안내",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139571",
+    "crawled_at": "2026-09-03T08:21:20+00:00",
+    "first_seen_at": "2026-09-03T08:21:20+00:00"
+  },
+  {
+    "id": "d6d860488bd59a98",
+    "title": "[학생인재개발팀/대학일자리플러스센터] 2026 하반기 대기업 및 공기업 필기전형 대비 과정",
+    "source_site": "본교",
+    "category": "취업",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139553",
+    "crawled_at": "2026-09-03T08:21:20+00:00",
+    "first_seen_at": "2026-09-03T08:21:20+00:00"
+  },
+  {
+    "id": "41371d17a380459d",
+    "title": "[자연과학대학] 일반물리학2(GEDB010) 55분반 증원 안내",
+    "source_site": "공과대학",
+    "category": "수강신청공지",
+    "published_date": "2026-09-03",
+    "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138880&itemId=381D7FDD151E5BD78410C724F7747C26",
+    "crawled_at": "2026-09-03T08:21:44+00:00",
+    "first_seen_at": "2026-09-03T08:21:44+00:00"
+  },
+  {
+    "id": "29f92f11bb1f8947",
+    "title": "[자과캠 건강센터] 2026-2학기 금연상담교실 참가자 모집 안내",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139479",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
+    "first_seen_at": "2026-09-01T08:57:59+00:00"
+  },
+  {
+    "id": "a76ebf7333bcc134",
+    "title": "[인공지능혁신융합대학사업단] 2026 AICOSS Microsoft X SKKU Agenthon 교육 경진대회 모집안내",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139205",
+    "crawled_at": "2026-09-03T08:21:20+00:00",
+    "first_seen_at": "2026-08-20T04:25:04+00:00"
+  },
+  {
+    "id": "39946d448acfcb8e",
+    "title": "[의과대학] 2026년 2학기 홍산장학재단 장학생 선발안내 (~ 9월 4일 금요일 09:00까지)",
+    "source_site": "본교",
+    "category": "장학",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139443",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
+    "first_seen_at": "2026-08-31T06:31:39+00:00"
+  },
+  {
+    "id": "e00fd1cef075395a",
+    "title": "[대학원한마당] 삼성융합의과학원 진학설명회 개최 안내[9/29(화) 14시, 자연과학캠퍼스 의학관]",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139441",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
+    "first_seen_at": "2026-08-31T06:31:39+00:00"
+  },
+  {
+    "id": "042ac5248cddda52",
+    "title": "[교수학습혁신센터] 성균튜터링 35기 모집",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139306",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
+    "first_seen_at": "2026-08-24T04:33:46+00:00"
+  },
+  {
+    "id": "7fa5a2e4e47b131f",
+    "title": "[공지] 2026학년도 2학기 교외장학 지급 일정 안내",
+    "source_site": "본교",
+    "category": "장학",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139066",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
+    "first_seen_at": "2026-08-27T14:50:24+00:00"
+  },
+  {
+    "id": "3b373a447aaeaa92",
+    "title": "[공과대학] ERC2011-43 공학기초수학2 증원안내",
+    "source_site": "공과대학",
+    "category": "학사",
+    "published_date": "2026-09-03",
+    "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138879&itemId=38B7E1ABDED255D0D790FFE3DCAA9523",
+    "crawled_at": "2026-09-03T08:21:44+00:00",
+    "first_seen_at": "2026-09-03T08:21:44+00:00"
+  },
+  {
+    "id": "04967dd13be6e8ac",
+    "title": "[SAINT] 캠브릿지 김종민 석좌교수 학부 특강 -옥스브릿지로 가는 길(9/11(금) 13:30~, 83188)",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139557",
+    "crawled_at": "2026-09-03T08:21:20+00:00",
+    "first_seen_at": "2026-09-03T08:21:20+00:00"
+  },
+  {
+    "id": "f63145a7e20f3cfa",
+    "title": "[HUSS] 2026 AI 융합 커뮤니티 참여학생 모집(Claude 라이센스 제공 & 패스트캠퍼스 온라인 강의 수강권 제공)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139563",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
+    "first_seen_at": "2026-09-03T08:21:20+00:00"
+  },
+  {
+    "id": "35d11e0153d06f09",
+    "title": "2026년도 포항시장학회 장학생 선발 안내",
+    "source_site": "본교",
+    "category": "장학",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139550",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
+    "first_seen_at": "2026-09-03T08:21:22+00:00"
+  },
+  {
+    "id": "5ba276ecf82b8a5f",
+    "title": "2026년도 2학기 파안장학문화재단 석·박사 장학생 모집 안내(9/1 화요일 ~ 9/8 화요일 AM 09:00)",
+    "source_site": "본교",
+    "category": "장학",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139439",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
+    "first_seen_at": "2026-08-31T06:31:39+00:00"
+  },
+  {
+    "id": "0f882583459f918f",
+    "title": "2026-2 전자전기컴퓨터공학과 진학설명회 안내(9/29(화), 13:30/ 사전접수: 9/22(화))",
+    "source_site": "본교",
+    "category": "입학",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139546",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
+    "first_seen_at": "2026-09-03T08:21:22+00:00"
+  },
+  {
+    "id": "75f808761ffa98e7",
+    "title": "(강의실 변경) 2026-2학기 디스플레이 부트캠프 사업설명회 개최 안내",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139261",
+    "crawled_at": "2026-09-03T08:21:20+00:00",
+    "first_seen_at": "2026-08-20T10:18:04+00:00"
+  },
+  {
+    "id": "cf3d33767fd55b7b",
+    "title": "(1학년) 2027학년도 미래인재육성재단 신규장학생 선발안내 (~ 9월 8일(화) AM 09:00까지)",
+    "source_site": "본교",
+    "category": "장학",
+    "published_date": "2026-09-03",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139473",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
+    "first_seen_at": "2026-09-03T08:21:22+00:00"
+  },
+  {
     "id": "3417f66975356007",
     "title": "제22회 대학원 학생성공스토리 특강",
     "source_site": "학생성공센터",
     "category": "대학원",
     "published_date": "2026-09-02",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=66356",
-    "crawled_at": "2026-09-02T23:40:11+00:00",
+    "crawled_at": "2026-09-03T08:21:40+00:00",
     "first_seen_at": "2026-09-02T08:12:07+00:00"
-  },
-  {
-    "id": "8dbf235c9bec9372",
-    "title": "인공지능혁신융합대학사업단] 2026년 09월 07일 월요일 전문가 특강 사전신청 안내",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-09-02",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139256",
-    "crawled_at": "2026-09-02T23:40:05+00:00",
-    "first_seen_at": "2026-08-20T10:18:04+00:00"
   },
   {
     "id": "303e34e5bb2536fe",
@@ -47,7 +257,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-09-02",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139528",
-    "crawled_at": "2026-09-02T23:40:03+00:00",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
     "first_seen_at": "2026-09-02T13:55:44+00:00"
   },
   {
@@ -177,7 +387,7 @@ window.NOTICES = [
     "category": "장학",
     "published_date": "2026-09-02",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139165",
-    "crawled_at": "2026-09-02T23:40:03+00:00",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
     "first_seen_at": "2026-08-18T22:10:43+00:00"
   },
   {
@@ -227,7 +437,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-02",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139273",
-    "crawled_at": "2026-09-02T23:40:03+00:00",
+    "crawled_at": "2026-09-03T08:21:22+00:00",
     "first_seen_at": "2026-08-21T04:27:22+00:00"
   },
   {
@@ -351,16 +561,6 @@ window.NOTICES = [
     "first_seen_at": "2026-08-31T10:12:05+00:00"
   },
   {
-    "id": "29f92f11bb1f8947",
-    "title": "[자과캠 건강센터] 2026-2학기 금연상담교실 참가자 모집 안내",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-09-01",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139479",
-    "crawled_at": "2026-09-01T23:38:20+00:00",
-    "first_seen_at": "2026-09-01T08:57:59+00:00"
-  },
-  {
     "id": "fd844735ce89f20a",
     "title": "[인권센터] 2026년 대학원생 마인드힐링(심리상담) 지원 안내(~ 9.18)",
     "source_site": "본교",
@@ -369,16 +569,6 @@ window.NOTICES = [
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139438",
     "crawled_at": "2026-09-01T23:38:22+00:00",
     "first_seen_at": "2026-08-31T06:31:37+00:00"
-  },
-  {
-    "id": "a76ebf7333bcc134",
-    "title": "[인공지능혁신융합대학사업단] 2026 AICOSS Microsoft X SKKU Agenthon 교육 경진대회 모집안내",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-09-01",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139205",
-    "crawled_at": "2026-09-01T23:38:22+00:00",
-    "first_seen_at": "2026-08-20T04:25:04+00:00"
   },
   {
     "id": "0b2119ce1c10f20a",
@@ -411,16 +601,6 @@ window.NOTICES = [
     "first_seen_at": "2026-09-01T08:57:59+00:00"
   },
   {
-    "id": "042ac5248cddda52",
-    "title": "[교수학습혁신센터] 성균튜터링 35기 모집",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-09-01",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139306",
-    "crawled_at": "2026-09-01T00:52:09+00:00",
-    "first_seen_at": "2026-08-24T04:33:46+00:00"
-  },
-  {
     "id": "9203c177990a81d0",
     "title": "[교수학습혁신센터] 대학원생 연구 설계 스터디 '연구 메이트' 참여자 모집(석사과정생)",
     "source_site": "본교",
@@ -447,7 +627,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-01",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138883&itemId=10F89F6C319B4E2ABDA067B29CAAB9C0",
-    "crawled_at": "2026-09-02T23:40:14+00:00",
+    "crawled_at": "2026-09-03T08:21:44+00:00",
     "first_seen_at": "2026-09-01T08:58:12+00:00"
   },
   {
@@ -501,16 +681,6 @@ window.NOTICES = [
     "first_seen_at": "2026-08-18T15:38:44+00:00"
   },
   {
-    "id": "dde1b81da7188bcd",
-    "title": "성균관대학교(자연과학캠퍼스) 피지컬AI사업단 행정직원 채용공고 (~9월6일까지)",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-08-31",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139373",
-    "crawled_at": "2026-09-01T00:52:11+00:00",
-    "first_seen_at": "2026-08-26T10:23:18+00:00"
-  },
-  {
     "id": "7e4b9f578affb5d3",
     "title": "사회과학대학 제39회 수선포럼 개최 안내: 2026.09.30.(수) 11:30~13:00",
     "source_site": "본교",
@@ -519,16 +689,6 @@ window.NOTICES = [
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139447",
     "crawled_at": "2026-08-31T10:12:05+00:00",
     "first_seen_at": "2026-08-31T06:31:37+00:00"
-  },
-  {
-    "id": "dee194bef02c6d06",
-    "title": "독일어권사회문화연구소 국제 컨퍼런스 \"생성형 AI 시대의 비관주의적 휴머니즘을 넘어: 연구, 교육, 사회의 전환\"",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-08-31",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139350",
-    "crawled_at": "2026-09-01T00:52:11+00:00",
-    "first_seen_at": "2026-08-25T10:20:01+00:00"
   },
   {
     "id": "2e594e21997a06a2",
@@ -571,16 +731,6 @@ window.NOTICES = [
     "first_seen_at": "2026-08-31T06:31:39+00:00"
   },
   {
-    "id": "39946d448acfcb8e",
-    "title": "[의과대학] 2026년 2학기 홍산장학재단 장학생 선발안내 (~ 9월 4일 금요일 09:00까지)",
-    "source_site": "본교",
-    "category": "장학",
-    "published_date": "2026-08-31",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139443",
-    "crawled_at": "2026-08-31T10:12:06+00:00",
-    "first_seen_at": "2026-08-31T06:31:39+00:00"
-  },
-  {
     "id": "99d6ed76399ef296",
     "title": "[스포츠재활 연구실] 만성 발목 불안정성 대상 감각-인지 기반 발목 재활운동 연구 참여자 모집",
     "source_site": "본교",
@@ -601,16 +751,6 @@ window.NOTICES = [
     "first_seen_at": "2026-08-31T06:31:37+00:00"
   },
   {
-    "id": "e00fd1cef075395a",
-    "title": "[대학원한마당] 삼성융합의과학원 진학설명회 개최 안내[9/29(화) 14시, 자연과학캠퍼스 의학관]",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-08-31",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139441",
-    "crawled_at": "2026-08-31T10:12:06+00:00",
-    "first_seen_at": "2026-08-31T06:31:39+00:00"
-  },
-  {
     "id": "5e26cea41425aac5",
     "title": "[기숙사]2026학년도 2학기 명륜학사 공석(남학생) 모집 안내",
     "source_site": "본교",
@@ -629,16 +769,6 @@ window.NOTICES = [
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139462",
     "crawled_at": "2026-09-01T00:52:09+00:00",
     "first_seen_at": "2026-08-31T10:12:05+00:00"
-  },
-  {
-    "id": "7fa5a2e4e47b131f",
-    "title": "[공지] 2026학년도 2학기 교외장학 지급 일정 안내",
-    "source_site": "본교",
-    "category": "장학",
-    "published_date": "2026-08-31",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139066",
-    "crawled_at": "2026-09-01T00:52:11+00:00",
-    "first_seen_at": "2026-08-27T14:50:24+00:00"
   },
   {
     "id": "9a2b61b647830e51",
@@ -691,16 +821,6 @@ window.NOTICES = [
     "first_seen_at": "2026-08-31T06:31:37+00:00"
   },
   {
-    "id": "5ba276ecf82b8a5f",
-    "title": "2026년도 2학기 파안장학문화재단 석·박사 장학생 모집 안내(9/1 화요일 ~ 9/8 화요일 AM 09:00)",
-    "source_site": "본교",
-    "category": "장학",
-    "published_date": "2026-08-31",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139439",
-    "crawled_at": "2026-08-31T06:31:39+00:00",
-    "first_seen_at": "2026-08-31T06:31:39+00:00"
-  },
-  {
     "id": "efa0cfa8280c6b42",
     "title": "2026년 후반기 학군사관(ROTC) 모집안내 (1,2학년 대상)",
     "source_site": "본교",
@@ -737,7 +857,7 @@ window.NOTICES = [
     "category": "학부",
     "published_date": "2026-08-28",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=66151",
-    "crawled_at": "2026-09-02T23:40:11+00:00",
+    "crawled_at": "2026-09-03T08:21:40+00:00",
     "first_seen_at": "2026-08-28T21:01:31+00:00"
   },
   {
@@ -767,7 +887,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-08-28",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=66252",
-    "crawled_at": "2026-09-02T23:40:11+00:00",
+    "crawled_at": "2026-09-03T08:21:40+00:00",
     "first_seen_at": "2026-08-28T21:01:31+00:00"
   },
   {
@@ -987,7 +1107,7 @@ window.NOTICES = [
     "category": "학부",
     "published_date": "2026-08-28",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=66171",
-    "crawled_at": "2026-09-02T23:40:11+00:00",
+    "crawled_at": "2026-09-03T08:21:40+00:00",
     "first_seen_at": "2026-08-28T21:01:31+00:00"
   },
   {
@@ -1097,7 +1217,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-08-27",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=DFAA259C6C3CC08A1039AC115D64BC7E",
-    "crawled_at": "2026-09-02T23:40:20+00:00",
+    "crawled_at": "2026-09-03T08:21:49+00:00",
     "first_seen_at": "2026-08-27T14:50:56+00:00"
   },
   {
@@ -1157,7 +1277,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-08-26",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=B448EC5782E4AFEF36DBD7DCDE6772F6",
-    "crawled_at": "2026-09-02T23:40:20+00:00",
+    "crawled_at": "2026-09-03T08:21:49+00:00",
     "first_seen_at": "2026-08-26T04:28:57+00:00"
   },
   {
@@ -1297,7 +1417,7 @@ window.NOTICES = [
     "category": "학부",
     "published_date": "2026-08-25",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=66058",
-    "crawled_at": "2026-09-02T23:40:11+00:00",
+    "crawled_at": "2026-09-03T08:21:40+00:00",
     "first_seen_at": "2026-08-25T10:20:08+00:00"
   },
   {
@@ -1487,7 +1607,7 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-08-25",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=66041",
-    "crawled_at": "2026-09-02T23:40:11+00:00",
+    "crawled_at": "2026-09-03T08:21:40+00:00",
     "first_seen_at": "2026-08-25T04:27:57+00:00"
   },
   {
@@ -1607,7 +1727,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-08-24",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=DF701023876B87AA629C504E15B85254",
-    "crawled_at": "2026-09-02T23:40:20+00:00",
+    "crawled_at": "2026-09-03T08:21:49+00:00",
     "first_seen_at": "2026-08-24T04:34:21+00:00"
   },
   {
@@ -1627,7 +1747,7 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-08-24",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65998",
-    "crawled_at": "2026-09-02T23:40:11+00:00",
+    "crawled_at": "2026-09-03T08:21:40+00:00",
     "first_seen_at": "2026-08-24T04:34:09+00:00"
   },
   {
@@ -1657,7 +1777,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-08-21",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138886&itemId=F13F76B20A8E3290BE25AA5CCEFBD11B",
-    "crawled_at": "2026-09-02T23:40:14+00:00",
+    "crawled_at": "2026-09-03T08:21:44+00:00",
     "first_seen_at": "2026-08-21T04:28:01+00:00"
   },
   {
@@ -1717,7 +1837,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-08-21",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138886&itemId=ABD395016F51FB4B07BE412ABD9192C8",
-    "crawled_at": "2026-09-02T23:40:14+00:00",
+    "crawled_at": "2026-09-03T08:21:44+00:00",
     "first_seen_at": "2026-08-21T04:28:01+00:00"
   },
   {
@@ -1727,7 +1847,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-21",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138883&itemId=C746814C57E32B8F488504E3F2EE9800",
-    "crawled_at": "2026-09-02T23:40:14+00:00",
+    "crawled_at": "2026-09-03T08:21:44+00:00",
     "first_seen_at": "2026-08-21T04:28:01+00:00"
   },
   {
@@ -1767,7 +1887,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-21",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138883&itemId=053C2B450F468BA058A711293A4C1167",
-    "crawled_at": "2026-09-02T23:40:14+00:00",
+    "crawled_at": "2026-09-03T08:21:44+00:00",
     "first_seen_at": "2026-08-21T04:28:01+00:00"
   },
   {
@@ -1777,7 +1897,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-21",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138883&itemId=C8AA3C185A367B02F183A69324B4FC3B",
-    "crawled_at": "2026-09-02T23:40:14+00:00",
+    "crawled_at": "2026-09-03T08:21:44+00:00",
     "first_seen_at": "2026-08-21T04:28:01+00:00"
   },
   {
@@ -1787,7 +1907,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-08-21",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138885&itemId=5AD71AD9017955A559EFE70EF5563084",
-    "crawled_at": "2026-09-02T23:40:14+00:00",
+    "crawled_at": "2026-09-03T08:21:44+00:00",
     "first_seen_at": "2026-08-21T04:28:01+00:00"
   },
   {
@@ -1807,7 +1927,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-08-20",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65911",
-    "crawled_at": "2026-09-02T23:40:11+00:00",
+    "crawled_at": "2026-09-03T08:21:40+00:00",
     "first_seen_at": "2026-08-20T22:15:15+00:00"
   },
   {
@@ -1917,18 +2037,8 @@ window.NOTICES = [
     "category": "학부",
     "published_date": "2026-08-20",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65919",
-    "crawled_at": "2026-09-02T23:40:11+00:00",
+    "crawled_at": "2026-09-03T08:21:40+00:00",
     "first_seen_at": "2026-08-20T22:15:15+00:00"
-  },
-  {
-    "id": "75f808761ffa98e7",
-    "title": "2026-2학기 디스플레이 부트캠프 사업설명회 개최 안내",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-08-20",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139261",
-    "crawled_at": "2026-08-23T04:25:44+00:00",
-    "first_seen_at": "2026-08-20T10:18:04+00:00"
   },
   {
     "id": "f2859c1a359b4524",
@@ -1937,7 +2047,7 @@ window.NOTICES = [
     "category": "학부",
     "published_date": "2026-08-20",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65912",
-    "crawled_at": "2026-09-02T23:40:11+00:00",
+    "crawled_at": "2026-09-03T08:21:40+00:00",
     "first_seen_at": "2026-08-20T22:15:15+00:00"
   },
   {
@@ -1967,7 +2077,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-08-19",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65884",
-    "crawled_at": "2026-09-02T23:40:12+00:00",
+    "crawled_at": "2026-09-03T08:21:42+00:00",
     "first_seen_at": "2026-08-19T04:25:42+00:00"
   },
   {
@@ -2067,7 +2177,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-08-19",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=E5592DF34182ED5B2FA61F7557C2726B",
-    "crawled_at": "2026-09-02T23:40:20+00:00",
+    "crawled_at": "2026-09-03T08:21:49+00:00",
     "first_seen_at": "2026-08-19T04:25:50+00:00"
   },
   {
@@ -2087,7 +2197,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-08-19",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138886&itemId=9EE2BF133656B04B913B84C63A8C8E6B",
-    "crawled_at": "2026-09-02T23:40:20+00:00",
+    "crawled_at": "2026-09-03T08:21:49+00:00",
     "first_seen_at": "2026-08-19T10:17:21+00:00"
   },
   {
@@ -2137,7 +2247,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-08-18",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138883&itemId=BCEC10BDB95127CE67BDD3CEA419C933",
-    "crawled_at": "2026-09-02T23:40:14+00:00",
+    "crawled_at": "2026-09-03T08:21:47+00:00",
     "first_seen_at": "2026-08-18T15:32:30+00:00"
   },
   {
@@ -2167,7 +2277,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-08-18",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138885&itemId=9C57DC7F8CC79F495C77F8DBFCF2577E",
-    "crawled_at": "2026-09-02T23:40:14+00:00",
+    "crawled_at": "2026-09-03T08:21:44+00:00",
     "first_seen_at": "2026-08-18T15:32:30+00:00"
   },
   {
@@ -2227,7 +2337,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-08-13",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=79CEE64D0DBF5B024B7D0889A1C2BFD7",
-    "crawled_at": "2026-09-02T23:40:20+00:00",
+    "crawled_at": "2026-09-03T08:21:49+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2287,7 +2397,7 @@ window.NOTICES = [
     "category": "학부",
     "published_date": "2026-08-11",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65769",
-    "crawled_at": "2026-09-02T23:40:12+00:00",
+    "crawled_at": "2026-09-03T08:21:42+00:00",
     "first_seen_at": "2026-08-19T04:25:42+00:00"
   },
   {
@@ -2377,7 +2487,7 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-08-03",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65495",
-    "crawled_at": "2026-09-02T23:40:12+00:00",
+    "crawled_at": "2026-09-03T08:21:42+00:00",
     "first_seen_at": "2026-08-19T04:25:42+00:00"
   },
   {
@@ -2387,7 +2497,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-07-29",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138883&itemId=1DFFF6557A8D102CBF86158C91EE3E88",
-    "crawled_at": "2026-09-02T23:40:14+00:00",
+    "crawled_at": "2026-09-03T08:21:47+00:00",
     "first_seen_at": "2026-08-18T15:32:30+00:00"
   },
   {
@@ -2397,7 +2507,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-07-27",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138883&itemId=94834B7D66B768E7FE6983AAA5DD667F",
-    "crawled_at": "2026-09-02T23:40:17+00:00",
+    "crawled_at": "2026-09-03T08:21:47+00:00",
     "first_seen_at": "2026-08-18T15:32:30+00:00"
   },
   {
@@ -2427,7 +2537,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-07-21",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=99502D1301310F6137F48A52AF56C87C",
-    "crawled_at": "2026-09-02T23:40:20+00:00",
+    "crawled_at": "2026-09-03T08:21:49+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2437,7 +2547,7 @@ window.NOTICES = [
     "category": "장학",
     "published_date": "2026-07-21",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138884&itemId=9FE4B66272B72D56125247058BAA722C",
-    "crawled_at": "2026-09-02T23:40:20+00:00",
+    "crawled_at": "2026-09-03T08:21:49+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2447,7 +2557,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-07-20",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=65257",
-    "crawled_at": "2026-09-02T23:40:12+00:00",
+    "crawled_at": "2026-09-03T08:21:42+00:00",
     "first_seen_at": "2026-08-19T04:25:42+00:00"
   },
   {
@@ -2467,7 +2577,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-07-13",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=D07FE8E521EB938D5417C02857B3E189",
-    "crawled_at": "2026-09-02T23:40:20+00:00",
+    "crawled_at": "2026-09-03T08:21:49+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2487,7 +2597,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-07-10",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=E8D2988FC89C02307E51C19ABC1FE81B",
-    "crawled_at": "2026-09-02T23:40:20+00:00",
+    "crawled_at": "2026-09-03T08:21:49+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2497,7 +2607,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-07-07",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138883&itemId=BBE4BB530665A9882F88494E8292E7A5",
-    "crawled_at": "2026-09-02T23:40:17+00:00",
+    "crawled_at": "2026-09-03T08:21:47+00:00",
     "first_seen_at": "2026-08-18T15:32:30+00:00"
   },
   {
@@ -2527,7 +2637,7 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-07-02",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64919",
-    "crawled_at": "2026-09-02T23:40:12+00:00",
+    "crawled_at": "2026-09-03T08:21:42+00:00",
     "first_seen_at": "2026-08-19T04:25:42+00:00"
   },
   {
@@ -2537,7 +2647,7 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-07-02",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64918",
-    "crawled_at": "2026-09-02T23:40:12+00:00",
+    "crawled_at": "2026-09-03T08:21:42+00:00",
     "first_seen_at": "2026-08-19T04:25:42+00:00"
   },
   {
@@ -2547,7 +2657,7 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-07-02",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64920",
-    "crawled_at": "2026-09-02T23:40:12+00:00",
+    "crawled_at": "2026-09-03T08:21:42+00:00",
     "first_seen_at": "2026-08-19T04:25:42+00:00"
   },
   {
@@ -2557,7 +2667,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-06-25",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64805",
-    "crawled_at": "2026-09-02T23:40:12+00:00",
+    "crawled_at": "2026-09-03T08:21:42+00:00",
     "first_seen_at": "2026-08-19T04:25:42+00:00"
   },
   {
@@ -2567,7 +2677,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-06-24",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138885&itemId=0FC0E55B2BA5B7E4BA2CF9C1F3149838",
-    "crawled_at": "2026-09-02T23:40:17+00:00",
+    "crawled_at": "2026-09-03T08:21:47+00:00",
     "first_seen_at": "2026-08-18T15:32:30+00:00"
   },
   {
@@ -2587,7 +2697,7 @@ window.NOTICES = [
     "category": "취업",
     "published_date": "2026-06-23",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138882&itemId=FE2CCD23BD3AD4A47A306B83BE122C5A",
-    "crawled_at": "2026-09-02T23:40:17+00:00",
+    "crawled_at": "2026-09-03T08:21:47+00:00",
     "first_seen_at": "2026-08-18T15:32:30+00:00"
   },
   {
@@ -2617,7 +2727,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-06-18",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=25CD42B7D10490337AD2DD71EE522070",
-    "crawled_at": "2026-09-02T23:40:22+00:00",
+    "crawled_at": "2026-09-03T08:21:51+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2627,7 +2737,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-06-18",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=723DD756FDF201073D429BC4995A635E",
-    "crawled_at": "2026-09-02T23:40:22+00:00",
+    "crawled_at": "2026-09-03T08:21:51+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2637,7 +2747,7 @@ window.NOTICES = [
     "category": "학부",
     "published_date": "2026-06-18",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64715",
-    "crawled_at": "2026-09-02T23:40:12+00:00",
+    "crawled_at": "2026-09-03T08:21:42+00:00",
     "first_seen_at": "2026-08-19T04:25:42+00:00"
   },
   {
@@ -2647,7 +2757,7 @@ window.NOTICES = [
     "category": "대학원",
     "published_date": "2026-06-16",
     "original_url": "https://success.skku.edu/success/notice.do?mode=view&articleNo=64657",
-    "crawled_at": "2026-09-02T23:40:12+00:00",
+    "crawled_at": "2026-09-03T08:21:42+00:00",
     "first_seen_at": "2026-08-19T04:25:42+00:00"
   },
   {
@@ -2667,7 +2777,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-06-15",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=FA399F7D4FBF980CC4CA442F3A988B6D",
-    "crawled_at": "2026-09-02T23:40:22+00:00",
+    "crawled_at": "2026-09-03T08:21:51+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2677,7 +2787,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-06-15",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=A1A22FD12D85BFCD8FA9E7726369E4CB",
-    "crawled_at": "2026-09-02T23:40:22+00:00",
+    "crawled_at": "2026-09-03T08:21:51+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2697,7 +2807,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-06-12",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=7176D61EB2573503D2BDA6051AFD2063",
-    "crawled_at": "2026-09-02T23:40:22+00:00",
+    "crawled_at": "2026-09-03T08:21:51+00:00",
     "first_seen_at": "2026-08-18T15:38:59+00:00"
   },
   {
@@ -2707,7 +2817,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-06-12",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138886&itemId=FF90B8593B5EBE7D7837A9B6B8FB4757",
-    "crawled_at": "2026-09-02T23:40:22+00:00",
+    "crawled_at": "2026-09-03T08:21:51+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2727,7 +2837,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-06-08",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138886&itemId=06F0893BF60DC62C802F1CED96C1B69C",
-    "crawled_at": "2026-09-02T23:40:17+00:00",
+    "crawled_at": "2026-09-03T08:21:47+00:00",
     "first_seen_at": "2026-08-18T15:32:30+00:00"
   },
   {
@@ -2737,7 +2847,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-06-08",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=16B6F407EC6D2D1A512E4A337C255664",
-    "crawled_at": "2026-09-02T23:40:22+00:00",
+    "crawled_at": "2026-09-03T08:21:51+00:00",
     "first_seen_at": "2026-08-18T15:38:59+00:00"
   },
   {
@@ -2767,7 +2877,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-05-29",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138886&itemId=9FE7A5DF05E74B0040D871FD133A433D",
-    "crawled_at": "2026-09-02T23:40:17+00:00",
+    "crawled_at": "2026-09-03T08:21:47+00:00",
     "first_seen_at": "2026-08-18T15:32:30+00:00"
   },
   {
@@ -2777,7 +2887,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-05-28",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138885&itemId=349A5A7F5E8B846F998712633C529D51",
-    "crawled_at": "2026-09-02T23:40:17+00:00",
+    "crawled_at": "2026-09-03T08:21:47+00:00",
     "first_seen_at": "2026-08-18T15:32:30+00:00"
   },
   {
@@ -2837,7 +2947,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-05-22",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=86CAE0C361A062537EF8EEA5D5C6EACD",
-    "crawled_at": "2026-09-02T23:40:22+00:00",
+    "crawled_at": "2026-09-03T08:21:51+00:00",
     "first_seen_at": "2026-08-18T15:38:59+00:00"
   },
   {
@@ -2917,7 +3027,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-05-19",
     "original_url": "https://enc.skku.edu/enc/notice.do?mode=view&link=null&viewBoardId=138885&itemId=7C999AA4D99FD461B406B673318B5DD3",
-    "crawled_at": "2026-09-02T23:40:17+00:00",
+    "crawled_at": "2026-09-03T08:21:47+00:00",
     "first_seen_at": "2026-08-18T15:32:32+00:00"
   },
   {
@@ -2947,7 +3057,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-05-12",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=0FAD7A951030FEE2C2C84921BBC3B1A2",
-    "crawled_at": "2026-09-02T23:40:22+00:00",
+    "crawled_at": "2026-09-03T08:21:51+00:00",
     "first_seen_at": "2026-08-18T15:38:59+00:00"
   },
   {
@@ -2957,7 +3067,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-05-12",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=3E7D8E62E1EDA92250AFFBAF3192372A",
-    "crawled_at": "2026-09-02T23:40:22+00:00",
+    "crawled_at": "2026-09-03T08:21:51+00:00",
     "first_seen_at": "2026-08-18T15:38:59+00:00"
   },
   {
