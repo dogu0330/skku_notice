@@ -7,7 +7,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-06",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139302",
-    "crawled_at": "2026-09-06T08:11:01+00:00",
+    "crawled_at": "2026-09-06T13:15:26+00:00",
     "first_seen_at": "2026-08-23T22:10:00+00:00"
   },
   {
@@ -17,7 +17,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-05",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139593",
-    "crawled_at": "2026-09-06T08:11:01+00:00",
+    "crawled_at": "2026-09-06T13:15:26+00:00",
     "first_seen_at": "2026-09-05T07:54:08+00:00"
   },
   {
@@ -27,7 +27,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-09-05",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139350",
-    "crawled_at": "2026-09-06T08:11:01+00:00",
+    "crawled_at": "2026-09-06T13:15:26+00:00",
     "first_seen_at": "2026-08-25T10:20:01+00:00"
   },
   {
@@ -37,7 +37,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139624",
-    "crawled_at": "2026-09-06T08:11:04+00:00",
+    "crawled_at": "2026-09-06T13:15:30+00:00",
     "first_seen_at": "2026-09-04T08:17:18+00:00"
   },
   {
@@ -47,7 +47,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139256",
-    "crawled_at": "2026-09-06T08:11:04+00:00",
+    "crawled_at": "2026-09-06T13:15:30+00:00",
     "first_seen_at": "2026-08-20T10:18:04+00:00"
   },
   {
@@ -57,7 +57,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139641",
-    "crawled_at": "2026-09-06T08:11:01+00:00",
+    "crawled_at": "2026-09-06T13:15:26+00:00",
     "first_seen_at": "2026-09-04T13:50:49+00:00"
   },
   {
@@ -67,7 +67,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139506",
-    "crawled_at": "2026-09-06T08:11:01+00:00",
+    "crawled_at": "2026-09-06T13:15:26+00:00",
     "first_seen_at": "2026-09-02T08:11:55+00:00"
   },
   {
@@ -87,7 +87,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139605",
-    "crawled_at": "2026-09-06T08:11:04+00:00",
+    "crawled_at": "2026-09-06T13:15:30+00:00",
     "first_seen_at": "2026-09-04T08:17:22+00:00"
   },
   {
@@ -107,7 +107,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139479",
-    "crawled_at": "2026-09-06T08:11:04+00:00",
+    "crawled_at": "2026-09-06T13:15:30+00:00",
     "first_seen_at": "2026-09-01T08:57:59+00:00"
   },
   {
@@ -117,7 +117,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139205",
-    "crawled_at": "2026-09-06T08:11:04+00:00",
+    "crawled_at": "2026-09-06T13:15:30+00:00",
     "first_seen_at": "2026-08-20T04:25:04+00:00"
   },
   {
@@ -127,7 +127,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139628",
-    "crawled_at": "2026-09-06T08:11:01+00:00",
+    "crawled_at": "2026-09-06T13:15:26+00:00",
     "first_seen_at": "2026-09-04T08:17:18+00:00"
   },
   {
@@ -137,7 +137,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139610",
-    "crawled_at": "2026-09-06T08:11:04+00:00",
+    "crawled_at": "2026-09-06T13:15:30+00:00",
     "first_seen_at": "2026-09-04T08:17:18+00:00"
   },
   {
@@ -147,7 +147,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139635",
-    "crawled_at": "2026-09-06T08:11:01+00:00",
+    "crawled_at": "2026-09-06T13:15:26+00:00",
     "first_seen_at": "2026-09-04T08:17:18+00:00"
   },
   {
@@ -207,7 +207,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139504",
-    "crawled_at": "2026-09-06T08:11:04+00:00",
+    "crawled_at": "2026-09-06T13:15:30+00:00",
     "first_seen_at": "2026-09-02T08:11:55+00:00"
   },
   {
@@ -217,7 +217,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139609",
-    "crawled_at": "2026-09-06T08:11:04+00:00",
+    "crawled_at": "2026-09-06T13:15:30+00:00",
     "first_seen_at": "2026-09-04T08:17:18+00:00"
   },
   {
@@ -227,7 +227,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139563",
-    "crawled_at": "2026-09-06T08:11:04+00:00",
+    "crawled_at": "2026-09-06T13:15:30+00:00",
     "first_seen_at": "2026-09-03T08:21:20+00:00"
   },
   {
@@ -247,7 +247,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139638",
-    "crawled_at": "2026-09-06T08:11:01+00:00",
+    "crawled_at": "2026-09-06T13:15:26+00:00",
     "first_seen_at": "2026-09-04T13:50:49+00:00"
   },
   {
@@ -257,7 +257,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139413",
-    "crawled_at": "2026-09-06T08:11:01+00:00",
+    "crawled_at": "2026-09-06T13:15:26+00:00",
     "first_seen_at": "2026-08-28T21:01:24+00:00"
   },
   {
@@ -267,7 +267,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=138581",
-    "crawled_at": "2026-09-06T08:11:01+00:00",
+    "crawled_at": "2026-09-06T13:15:26+00:00",
     "first_seen_at": "2026-09-01T08:57:59+00:00"
   },
   {
@@ -287,7 +287,7 @@ window.NOTICES = [
     "category": "장학",
     "published_date": "2026-09-04",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139443",
-    "crawled_at": "2026-09-06T08:11:04+00:00",
+    "crawled_at": "2026-09-06T13:15:30+00:00",
     "first_seen_at": "2026-08-31T06:31:39+00:00"
   },
   {
@@ -1367,7 +1367,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-08-27",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=DFAA259C6C3CC08A1039AC115D64BC7E",
-    "crawled_at": "2026-09-06T08:11:48+00:00",
+    "crawled_at": "2026-09-06T13:16:21+00:00",
     "first_seen_at": "2026-08-27T14:50:56+00:00"
   },
   {
@@ -1427,7 +1427,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-08-26",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=B448EC5782E4AFEF36DBD7DCDE6772F6",
-    "crawled_at": "2026-09-06T08:11:48+00:00",
+    "crawled_at": "2026-09-06T13:16:21+00:00",
     "first_seen_at": "2026-08-26T04:28:57+00:00"
   },
   {
@@ -1877,7 +1877,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-08-24",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=DF701023876B87AA629C504E15B85254",
-    "crawled_at": "2026-09-06T08:11:48+00:00",
+    "crawled_at": "2026-09-06T13:16:21+00:00",
     "first_seen_at": "2026-08-24T04:34:21+00:00"
   },
   {
@@ -2327,7 +2327,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-08-19",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=E5592DF34182ED5B2FA61F7557C2726B",
-    "crawled_at": "2026-09-06T08:11:48+00:00",
+    "crawled_at": "2026-09-06T13:16:21+00:00",
     "first_seen_at": "2026-08-19T04:25:50+00:00"
   },
   {
@@ -2347,7 +2347,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-08-19",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138886&itemId=9EE2BF133656B04B913B84C63A8C8E6B",
-    "crawled_at": "2026-09-06T08:11:48+00:00",
+    "crawled_at": "2026-09-06T13:16:21+00:00",
     "first_seen_at": "2026-08-19T10:17:21+00:00"
   },
   {
@@ -2487,7 +2487,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-08-13",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=79CEE64D0DBF5B024B7D0889A1C2BFD7",
-    "crawled_at": "2026-09-06T08:11:48+00:00",
+    "crawled_at": "2026-09-06T13:16:21+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2687,7 +2687,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-07-21",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=99502D1301310F6137F48A52AF56C87C",
-    "crawled_at": "2026-09-06T08:11:48+00:00",
+    "crawled_at": "2026-09-06T13:16:21+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2697,7 +2697,7 @@ window.NOTICES = [
     "category": "장학",
     "published_date": "2026-07-21",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138884&itemId=9FE4B66272B72D56125247058BAA722C",
-    "crawled_at": "2026-09-06T08:11:48+00:00",
+    "crawled_at": "2026-09-06T13:16:21+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2727,7 +2727,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-07-13",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=D07FE8E521EB938D5417C02857B3E189",
-    "crawled_at": "2026-09-06T08:11:48+00:00",
+    "crawled_at": "2026-09-06T13:16:21+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2747,7 +2747,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-07-10",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=E8D2988FC89C02307E51C19ABC1FE81B",
-    "crawled_at": "2026-09-06T08:11:48+00:00",
+    "crawled_at": "2026-09-06T13:16:21+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2877,7 +2877,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-06-18",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=25CD42B7D10490337AD2DD71EE522070",
-    "crawled_at": "2026-09-06T08:11:50+00:00",
+    "crawled_at": "2026-09-06T13:16:23+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2887,7 +2887,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-06-18",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=723DD756FDF201073D429BC4995A635E",
-    "crawled_at": "2026-09-06T08:11:50+00:00",
+    "crawled_at": "2026-09-06T13:16:23+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2927,7 +2927,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-06-15",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=FA399F7D4FBF980CC4CA442F3A988B6D",
-    "crawled_at": "2026-09-06T08:11:50+00:00",
+    "crawled_at": "2026-09-06T13:16:23+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2937,7 +2937,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-06-15",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=A1A22FD12D85BFCD8FA9E7726369E4CB",
-    "crawled_at": "2026-09-06T08:11:50+00:00",
+    "crawled_at": "2026-09-06T13:16:23+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2957,7 +2957,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-06-12",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=7176D61EB2573503D2BDA6051AFD2063",
-    "crawled_at": "2026-09-06T08:11:50+00:00",
+    "crawled_at": "2026-09-06T13:16:23+00:00",
     "first_seen_at": "2026-08-18T15:38:59+00:00"
   },
   {
@@ -2967,7 +2967,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-06-12",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138886&itemId=FF90B8593B5EBE7D7837A9B6B8FB4757",
-    "crawled_at": "2026-09-06T08:11:50+00:00",
+    "crawled_at": "2026-09-06T13:16:23+00:00",
     "first_seen_at": "2026-08-18T15:38:57+00:00"
   },
   {
@@ -2997,7 +2997,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-06-08",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=16B6F407EC6D2D1A512E4A337C255664",
-    "crawled_at": "2026-09-06T08:11:50+00:00",
+    "crawled_at": "2026-09-06T13:16:23+00:00",
     "first_seen_at": "2026-08-18T15:38:59+00:00"
   },
   {
@@ -3097,7 +3097,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-05-22",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138879&itemId=86CAE0C361A062537EF8EEA5D5C6EACD",
-    "crawled_at": "2026-09-06T08:11:50+00:00",
+    "crawled_at": "2026-09-06T13:16:23+00:00",
     "first_seen_at": "2026-08-18T15:38:59+00:00"
   },
   {
@@ -3207,7 +3207,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-05-12",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=0FAD7A951030FEE2C2C84921BBC3B1A2",
-    "crawled_at": "2026-09-06T08:11:50+00:00",
+    "crawled_at": "2026-09-06T13:16:23+00:00",
     "first_seen_at": "2026-08-18T15:38:59+00:00"
   },
   {
@@ -3217,7 +3217,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-05-12",
     "original_url": "https://liberalarts.skku.edu/liberal/community/under_notice.do?mode=view&link=null&viewBoardId=138885&itemId=3E7D8E62E1EDA92250AFFBAF3192372A",
-    "crawled_at": "2026-09-06T08:11:50+00:00",
+    "crawled_at": "2026-09-06T13:16:23+00:00",
     "first_seen_at": "2026-08-18T15:38:59+00:00"
   },
   {
