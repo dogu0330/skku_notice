@@ -7,7 +7,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140701",
-    "crawled_at": "2026-10-21T08:56:59+00:00",
+    "crawled_at": "2026-10-21T14:44:27+00:00",
     "first_seen_at": "2026-10-21T08:56:59+00:00"
   },
   {
@@ -17,7 +17,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140702",
-    "crawled_at": "2026-10-21T08:56:59+00:00",
+    "crawled_at": "2026-10-21T14:44:27+00:00",
     "first_seen_at": "2026-10-21T08:56:59+00:00"
   },
   {
@@ -27,8 +27,18 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140355",
-    "crawled_at": "2026-10-21T08:56:58+00:00",
+    "crawled_at": "2026-10-21T14:44:25+00:00",
     "first_seen_at": "2026-10-06T10:51:45+00:00"
+  },
+  {
+    "id": "bdb65a4982455c28",
+    "title": "의과대학 학부생 대상 의료AI 입문·실습교육 안내(~10/25까지 신청)",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-10-21",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140711",
+    "crawled_at": "2026-10-21T14:44:25+00:00",
+    "first_seen_at": "2026-10-21T14:44:25+00:00"
   },
   {
     "id": "a3495eb1fcd9bd4d",
@@ -47,7 +57,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140674",
-    "crawled_at": "2026-10-21T08:56:59+00:00",
+    "crawled_at": "2026-10-21T14:44:27+00:00",
     "first_seen_at": "2026-10-20T08:58:23+00:00"
   },
   {
@@ -67,7 +77,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140240",
-    "crawled_at": "2026-10-21T08:56:58+00:00",
+    "crawled_at": "2026-10-21T14:44:25+00:00",
     "first_seen_at": "2026-09-30T10:03:48+00:00"
   },
   {
@@ -77,7 +87,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140558",
-    "crawled_at": "2026-10-21T08:56:58+00:00",
+    "crawled_at": "2026-10-21T14:44:27+00:00",
     "first_seen_at": "2026-10-14T00:42:50+00:00"
   },
   {
@@ -87,7 +97,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140496",
-    "crawled_at": "2026-10-21T08:56:59+00:00",
+    "crawled_at": "2026-10-21T14:44:27+00:00",
     "first_seen_at": "2026-10-12T11:24:58+00:00"
   },
   {
@@ -97,8 +107,18 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140482",
-    "crawled_at": "2026-10-21T08:56:59+00:00",
+    "crawled_at": "2026-10-21T14:44:27+00:00",
     "first_seen_at": "2026-10-13T02:45:21+00:00"
+  },
+  {
+    "id": "c57c7a141a563adb",
+    "title": "[연장공지] 사회과학/예술대학행정실 행정조교 모집[~10.22.(목) 16:00까지]",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-10-21",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140537",
+    "crawled_at": "2026-10-21T14:44:25+00:00",
+    "first_seen_at": "2026-10-13T11:14:53+00:00"
   },
   {
     "id": "891057bdc0649dc8",
@@ -107,7 +127,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140707",
-    "crawled_at": "2026-10-21T08:56:58+00:00",
+    "crawled_at": "2026-10-21T14:44:25+00:00",
     "first_seen_at": "2026-10-21T08:56:58+00:00"
   },
   {
@@ -117,7 +137,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140691",
-    "crawled_at": "2026-10-21T08:56:59+00:00",
+    "crawled_at": "2026-10-21T14:44:27+00:00",
     "first_seen_at": "2026-10-20T08:58:23+00:00"
   },
   {
@@ -127,7 +147,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140705",
-    "crawled_at": "2026-10-21T08:56:58+00:00",
+    "crawled_at": "2026-10-21T14:44:25+00:00",
     "first_seen_at": "2026-10-21T08:56:58+00:00"
   },
   {
@@ -137,7 +157,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140459",
-    "crawled_at": "2026-10-21T08:56:58+00:00",
+    "crawled_at": "2026-10-21T14:44:27+00:00",
     "first_seen_at": "2026-10-08T10:59:50+00:00"
   },
   {
@@ -147,7 +167,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140704",
-    "crawled_at": "2026-10-21T08:56:59+00:00",
+    "crawled_at": "2026-10-21T14:44:27+00:00",
     "first_seen_at": "2026-10-21T08:56:59+00:00"
   },
   {
@@ -157,7 +177,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140709",
-    "crawled_at": "2026-10-21T08:56:58+00:00",
+    "crawled_at": "2026-10-21T14:44:25+00:00",
     "first_seen_at": "2026-10-21T08:56:58+00:00"
   },
   {
@@ -167,7 +187,7 @@ window.NOTICES = [
     "category": "학사",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495",
-    "crawled_at": "2026-10-21T08:56:58+00:00",
+    "crawled_at": "2026-10-21T14:44:25+00:00",
     "first_seen_at": "2026-10-12T11:24:58+00:00"
   },
   {
@@ -177,7 +197,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140703",
-    "crawled_at": "2026-10-21T08:56:59+00:00",
+    "crawled_at": "2026-10-21T14:44:27+00:00",
     "first_seen_at": "2026-10-21T08:56:59+00:00"
   },
   {
@@ -187,7 +207,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140603",
-    "crawled_at": "2026-10-21T08:56:58+00:00",
+    "crawled_at": "2026-10-21T14:44:25+00:00",
     "first_seen_at": "2026-10-15T08:39:18+00:00"
   },
   {
@@ -207,7 +227,7 @@ window.NOTICES = [
     "category": "장학",
     "published_date": "2026-10-21",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140706",
-    "crawled_at": "2026-10-21T08:56:58+00:00",
+    "crawled_at": "2026-10-21T14:44:25+00:00",
     "first_seen_at": "2026-10-21T08:56:58+00:00"
   },
   {
@@ -217,7 +237,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-10-20",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140492",
-    "crawled_at": "2026-10-21T08:56:59+00:00",
+    "crawled_at": "2026-10-21T14:44:27+00:00",
     "first_seen_at": "2026-10-12T11:24:58+00:00"
   },
   {
@@ -299,16 +319,6 @@ window.NOTICES = [
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140563",
     "crawled_at": "2026-10-21T00:13:11+00:00",
     "first_seen_at": "2026-10-14T09:06:07+00:00"
-  },
-  {
-    "id": "c57c7a141a563adb",
-    "title": "[연장공지] 사회과학/예술대학행정실 행정조교 모집[~10.22.(목) 16:00까지]",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-10-20",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140537",
-    "crawled_at": "2026-10-21T00:13:11+00:00",
-    "first_seen_at": "2026-10-13T11:14:53+00:00"
   },
   {
     "id": "27ad29ff354fdf21",
