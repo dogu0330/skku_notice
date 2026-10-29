@@ -1,6 +1,106 @@
 /* 자동 생성 파일 - crawler/crawl.py 실행 결과 */
 window.NOTICES = [
   {
+    "id": "ea57717a03760b60",
+    "title": "사범대학 에듀테크연구소 행정 직원 채용 공고",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-10-29",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141041",
+    "crawled_at": "2026-10-29T01:21:07+00:00",
+    "first_seen_at": "2026-10-29T01:21:06+00:00"
+  },
+  {
+    "id": "857979af218567b1",
+    "title": "✨(성균인성교육센터) 2026학년도 학부모(동반자) 공감 프로그램 신청 모집",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-10-29",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140924",
+    "crawled_at": "2026-10-29T01:21:06+00:00",
+    "first_seen_at": "2026-10-28T10:06:23+00:00"
+  },
+  {
+    "id": "59882e22eecd4b2e",
+    "title": "[학생인재개발팀/대학일자리플러스센터] 제18회 국제금융기구 채용설명회 안내",
+    "source_site": "본교",
+    "category": "취업",
+    "published_date": "2026-10-29",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140635",
+    "crawled_at": "2026-10-29T01:21:06+00:00",
+    "first_seen_at": "2026-10-19T09:23:14+00:00"
+  },
+  {
+    "id": "473d58d793cd4dcc",
+    "title": "[학생성공센터] 대학원 학생성공스토리 공모전(11/11) 진행자 모집",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-10-29",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141051",
+    "crawled_at": "2026-10-29T01:21:06+00:00",
+    "first_seen_at": "2026-10-29T01:21:06+00:00"
+  },
+  {
+    "id": "02f88ae56f09453a",
+    "title": "[앵커사업단] 글로벌 창업경진대회 Soulmate Pioneers 참가팀 모집(~11/15, 총 상금 900만원)",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-10-29",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140948",
+    "crawled_at": "2026-10-29T01:21:06+00:00",
+    "first_seen_at": "2026-10-28T10:06:23+00:00"
+  },
+  {
+    "id": "4d87dd4a933f4e58",
+    "title": "[성균융합원] 2027학년도 1학기 융합연구학점제 시행 안내(신청 ~11/25)",
+    "source_site": "본교",
+    "category": "학사",
+    "published_date": "2026-10-29",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140949",
+    "crawled_at": "2026-10-29T01:21:06+00:00",
+    "first_seen_at": "2026-10-28T10:06:23+00:00"
+  },
+  {
+    "id": "ea7cb862d218131e",
+    "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(오류 임시 중단, 재공지 예정)",
+    "source_site": "본교",
+    "category": "학사",
+    "published_date": "2026-10-29",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495",
+    "crawled_at": "2026-10-29T01:21:06+00:00",
+    "first_seen_at": "2026-10-12T11:24:58+00:00"
+  },
+  {
+    "id": "bdae09489f124aaa",
+    "title": "2026년도 통영시 저소득 대학생 장학금 지원대상자 선발 안내",
+    "source_site": "본교",
+    "category": "장학",
+    "published_date": "2026-10-29",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141044",
+    "crawled_at": "2026-10-29T01:21:06+00:00",
+    "first_seen_at": "2026-10-29T01:21:06+00:00"
+  },
+  {
+    "id": "2a27d5b5c4c15fd6",
+    "title": "2026년 하반기 교직원(정규직) 1차면접전형 결과 발표 및 2차면접전형 안내",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-10-29",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140830",
+    "crawled_at": "2026-10-29T01:21:06+00:00",
+    "first_seen_at": "2026-10-27T09:24:34+00:00"
+  },
+  {
+    "id": "8ac1ef1116522fb9",
+    "title": "2026년 성균관대학교 서베이리서치센터 통계 워크숍 안내",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-10-29",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140536",
+    "crawled_at": "2026-10-29T01:21:06+00:00",
+    "first_seen_at": "2026-10-13T11:14:53+00:00"
+  },
+  {
     "id": "4f04a9597f3fc32e",
     "title": "첨단산업인재양성 인공지능부트캠프 산학교수 채용 공고(~2026.11.8)",
     "source_site": "본교",
@@ -17,7 +117,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-28",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140355",
-    "crawled_at": "2026-10-28T10:06:23+00:00",
+    "crawled_at": "2026-10-29T01:21:07+00:00",
     "first_seen_at": "2026-10-06T10:51:45+00:00"
   },
   {
@@ -27,7 +127,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-10-28",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140837",
-    "crawled_at": "2026-10-28T10:06:25+00:00",
+    "crawled_at": "2026-10-29T01:21:07+00:00",
     "first_seen_at": "2026-10-28T10:06:25+00:00"
   },
   {
@@ -37,7 +137,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-28",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140855",
-    "crawled_at": "2026-10-28T10:06:23+00:00",
+    "crawled_at": "2026-10-29T01:21:07+00:00",
     "first_seen_at": "2026-10-28T10:06:23+00:00"
   },
   {
@@ -51,23 +151,13 @@ window.NOTICES = [
     "first_seen_at": "2026-10-28T10:06:25+00:00"
   },
   {
-    "id": "857979af218567b1",
-    "title": "✨(성균인성교육센터) 2026학년도 학부모(동반자) 공감 프로그램 신청 모집",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-10-28",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140924",
-    "crawled_at": "2026-10-28T10:06:25+00:00",
-    "first_seen_at": "2026-10-28T10:06:23+00:00"
-  },
-  {
     "id": "e052fec1e1bc9fe1",
     "title": "✨(성균인성교육센터) 2026-2 성균인의 자기이해 <인성함양 실천 특별프로그램 [성균]> 참가자 모집",
     "source_site": "본교",
     "category": "행사/세미나",
     "published_date": "2026-10-28",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140500",
-    "crawled_at": "2026-10-28T10:06:23+00:00",
+    "crawled_at": "2026-10-29T01:21:07+00:00",
     "first_seen_at": "2026-10-12T11:24:56+00:00"
   },
   {
@@ -77,7 +167,7 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-10-28",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140964",
-    "crawled_at": "2026-10-28T10:06:23+00:00",
+    "crawled_at": "2026-10-29T01:21:06+00:00",
     "first_seen_at": "2026-10-28T10:06:23+00:00"
   },
   {
@@ -87,7 +177,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-28",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140854",
-    "crawled_at": "2026-10-28T10:06:23+00:00",
+    "crawled_at": "2026-10-29T01:21:07+00:00",
     "first_seen_at": "2026-10-28T10:06:23+00:00"
   },
   {
@@ -97,7 +187,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-28",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140839",
-    "crawled_at": "2026-10-28T10:06:23+00:00",
+    "crawled_at": "2026-10-29T01:21:07+00:00",
     "first_seen_at": "2026-10-28T10:06:23+00:00"
   },
   {
@@ -107,27 +197,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-28",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140921",
-    "crawled_at": "2026-10-28T10:06:23+00:00",
-    "first_seen_at": "2026-10-28T10:06:23+00:00"
-  },
-  {
-    "id": "02f88ae56f09453a",
-    "title": "[앵커사업단] 글로벌 창업경진대회 Soulmate Pioneers 참가팀 모집(~11/15, 총 상금 900만원)",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-10-28",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140948",
-    "crawled_at": "2026-10-28T10:06:25+00:00",
-    "first_seen_at": "2026-10-28T10:06:23+00:00"
-  },
-  {
-    "id": "4d87dd4a933f4e58",
-    "title": "[성균융합원] 2027학년도 1학기 융합연구학점제 시행 안내(신청 ~11/25)",
-    "source_site": "본교",
-    "category": "학사",
-    "published_date": "2026-10-28",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140949",
-    "crawled_at": "2026-10-28T10:06:25+00:00",
+    "crawled_at": "2026-10-29T01:21:07+00:00",
     "first_seen_at": "2026-10-28T10:06:23+00:00"
   },
   {
@@ -147,7 +217,7 @@ window.NOTICES = [
     "category": "행사/세미나",
     "published_date": "2026-10-28",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140802",
-    "crawled_at": "2026-10-28T10:06:25+00:00",
+    "crawled_at": "2026-10-29T01:21:07+00:00",
     "first_seen_at": "2026-10-26T09:26:46+00:00"
   },
   {
@@ -157,18 +227,8 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-10-28",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140957",
-    "crawled_at": "2026-10-28T10:06:23+00:00",
+    "crawled_at": "2026-10-29T01:21:07+00:00",
     "first_seen_at": "2026-10-28T10:06:23+00:00"
-  },
-  {
-    "id": "ea7cb862d218131e",
-    "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행중)",
-    "source_site": "본교",
-    "category": "학사",
-    "published_date": "2026-10-28",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495",
-    "crawled_at": "2026-10-28T10:06:23+00:00",
-    "first_seen_at": "2026-10-12T11:24:58+00:00"
   },
   {
     "id": "54e6091a14cd8e00",
@@ -177,7 +237,7 @@ window.NOTICES = [
     "category": "장학",
     "published_date": "2026-10-28",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140845",
-    "crawled_at": "2026-10-28T10:06:23+00:00",
+    "crawled_at": "2026-10-29T01:21:07+00:00",
     "first_seen_at": "2026-10-28T10:06:23+00:00"
   },
   {
@@ -369,26 +429,6 @@ window.NOTICES = [
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140811",
     "crawled_at": "2026-10-27T00:58:28+00:00",
     "first_seen_at": "2026-10-27T00:58:28+00:00"
-  },
-  {
-    "id": "2a27d5b5c4c15fd6",
-    "title": "2026년 하반기 교직원(정규직) 1차면접전형 결과 발표 및 2차면접전형 안내",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-10-27",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140830",
-    "crawled_at": "2026-10-28T10:06:25+00:00",
-    "first_seen_at": "2026-10-27T09:24:34+00:00"
-  },
-  {
-    "id": "8ac1ef1116522fb9",
-    "title": "2026년 성균관대학교 서베이리서치센터 통계 워크숍 안내",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-10-27",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140536",
-    "crawled_at": "2026-10-28T10:06:25+00:00",
-    "first_seen_at": "2026-10-13T11:14:53+00:00"
   },
   {
     "id": "4c37210ec468e64f",
@@ -1077,7 +1117,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-10-20",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140492",
-    "crawled_at": "2026-10-28T10:06:25+00:00",
+    "crawled_at": "2026-10-29T01:21:07+00:00",
     "first_seen_at": "2026-10-12T11:24:58+00:00"
   },
   {
@@ -1287,16 +1327,6 @@ window.NOTICES = [
     "category": "취업",
     "published_date": "2026-10-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140640",
-    "crawled_at": "2026-10-20T00:46:48+00:00",
-    "first_seen_at": "2026-10-19T09:23:14+00:00"
-  },
-  {
-    "id": "59882e22eecd4b2e",
-    "title": "[학생인재개발팀/대학일자리플러스센터] 제18회 국제금융기구 채용설명회 안내",
-    "source_site": "본교",
-    "category": "취업",
-    "published_date": "2026-10-19",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140635",
     "crawled_at": "2026-10-20T00:46:48+00:00",
     "first_seen_at": "2026-10-19T09:23:14+00:00"
   },
