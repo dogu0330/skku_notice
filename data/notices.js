@@ -1,6 +1,196 @@
 /* 자동 생성 파일 - crawler/crawl.py 실행 결과 */
 window.NOTICES = [
   {
+    "id": "00549c70784e2af3",
+    "title": "경제대학 경제학과 행정조교 신규 채용 ~12.4.(금) 16시까지(합격자 결정 시 조기마감 가능)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139855",
+    "crawled_at": "2026-11-24T05:39:56+00:00",
+    "first_seen_at": "2026-09-14T09:20:15+00:00"
+  },
+  {
+    "id": "18ba80b0b5d07f69",
+    "title": "「2026 인공지능혁신융합대학사업단 산학협력 학생 성과 공유회」 참여 학생 모집",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142201",
+    "crawled_at": "2026-11-24T05:39:56+00:00",
+    "first_seen_at": "2026-11-23T13:47:29+00:00"
+  },
+  {
+    "id": "426648078dd091a3",
+    "title": "★ 2026 제2회 성균관대학교 삼성융합의과학원 국제심포지엄 안내 ★(11월 30일(월)까지 홈페이지 사전 등록 )",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141690",
+    "crawled_at": "2026-11-24T05:39:56+00:00",
+    "first_seen_at": "2026-11-09T12:16:43+00:00"
+  },
+  {
+    "id": "3bb4a1333e035b68",
+    "title": "[한국장학재단] 2027학년도 1학기 국가근로장학금 1차 학생신청 기간 안내(11.24.(화) 9시 ~ 2027.1.7.(목) 오후 6시까지)",
+    "source_site": "본교",
+    "category": "장학",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142277",
+    "crawled_at": "2026-11-24T05:39:58+00:00",
+    "first_seen_at": "2026-11-24T05:39:58+00:00"
+  },
+  {
+    "id": "82aeb9cac46fc4e8",
+    "title": "[특강 안내] 같은 나라, 다른 노년: 초고령사회 한국을 뒤르켐으로 다시 읽기 (국내학자 초청 집중특강)",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142297",
+    "crawled_at": "2026-11-24T05:39:58+00:00",
+    "first_seen_at": "2026-11-24T05:39:56+00:00"
+  },
+  {
+    "id": "6a4eb98363be38bd",
+    "title": "[채용/모집] 자연과학대학 수학과사무실 행정업무 조교 채용 (~11/25(수)까지)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141604",
+    "crawled_at": "2026-11-24T05:39:56+00:00",
+    "first_seen_at": "2026-11-05T11:41:20+00:00"
+  },
+  {
+    "id": "754a48e7790cf96c",
+    "title": "[인사캠] 2026년 12월 체력증진센터(경영관, 600주년기념관) 회원모집 안내",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142011",
+    "crawled_at": "2026-11-24T05:39:58+00:00",
+    "first_seen_at": "2026-11-16T12:10:43+00:00"
+  },
+  {
+    "id": "63934f8dcf928014",
+    "title": "[인공지능혁신융합대학사업단] 2026 서울과학기술대학교 동계 인공지능 SCI 부트캠프 개최 안내",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142229",
+    "crawled_at": "2026-11-24T05:39:56+00:00",
+    "first_seen_at": "2026-11-23T13:47:29+00:00"
+  },
+  {
+    "id": "f800c00254826212",
+    "title": "[인공지능혁신융합대학사업단] 2026 AICOSS 11월 전문가 특강 안내 사전신청안내",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141810",
+    "crawled_at": "2026-11-24T05:39:56+00:00",
+    "first_seen_at": "2026-11-12T02:34:50+00:00"
+  },
+  {
+    "id": "58721e7c10307111",
+    "title": "[스포츠재활 연구실] 만성 발목 불안정성 대상 감각-인지 기반 발목 재활운동 연구 참여자 모집",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142188",
+    "crawled_at": "2026-11-24T05:39:56+00:00",
+    "first_seen_at": "2026-11-23T13:47:29+00:00"
+  },
+  {
+    "id": "8f57393ca3907e37",
+    "title": "[성균관대·POSTECH 공동주최] 행정혁신포럼「AI시대의 대학행정」안내",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141939",
+    "crawled_at": "2026-11-24T05:39:56+00:00",
+    "first_seen_at": "2026-11-13T11:40:26+00:00"
+  },
+  {
+    "id": "7efd37bf69749b0a",
+    "title": "[서울시-SBA] 서울 야간경제 활성화 해커톤 참가팀 모집(~12월 7일, 총 상금 1,500만원)",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142140",
+    "crawled_at": "2026-11-24T05:39:58+00:00",
+    "first_seen_at": "2026-11-19T12:17:47+00:00"
+  },
+  {
+    "id": "0eac195b35dd688b",
+    "title": "[대학혁신과공유센터] 제28차 대학교육혁신 워크숍 안내 \"AI 시대, AI 핵심역량과 대학 교육의 혁신\"",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141686",
+    "crawled_at": "2026-11-24T05:39:58+00:00",
+    "first_seen_at": "2026-11-09T01:17:01+00:00"
+  },
+  {
+    "id": "a88f41fbeb6a42f8",
+    "title": "[대학혁신과공유센터] 제26회 융합기초프로젝트 참가자 모집(~12.23 수까지)",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142082",
+    "crawled_at": "2026-11-24T05:39:58+00:00",
+    "first_seen_at": "2026-11-18T03:12:13+00:00"
+  },
+  {
+    "id": "1edaafe61d0ba17d",
+    "title": "[교수학습혁신센터] 2026학년도 겨울방학 “성균공부방 : Share via AI” 17기 모집",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142181",
+    "crawled_at": "2026-11-24T05:39:56+00:00",
+    "first_seen_at": "2026-11-23T02:03:21+00:00"
+  },
+  {
+    "id": "2785ce9644e9c9b4",
+    "title": "[★연장][창업지원단/실험실창업혁신단] 2026 SKKU UNITE 프리 텍스코어(11/28~29) 참가자 모집(이비스 앰배서더 수원, 총상금 350만원)",
+    "source_site": "본교",
+    "category": "행사/세미나",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141498",
+    "crawled_at": "2026-11-24T05:39:58+00:00",
+    "first_seen_at": "2026-11-02T11:46:11+00:00"
+  },
+  {
+    "id": "a07a19b894759014",
+    "title": "AI응용공학과 2027학년도 전기 수시 1차 대학원 신입생 모집",
+    "source_site": "본교",
+    "category": "입학",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141723",
+    "crawled_at": "2026-11-24T05:39:58+00:00",
+    "first_seen_at": "2026-11-10T03:52:21+00:00"
+  },
+  {
+    "id": "f81f0b88392de04e",
+    "title": "2027년 1학기 한국농어촌희망재단 「청년창업농장학금」장학생 선발 안내(26.12.1 10:00 ~ 27.1.5 17:00)",
+    "source_site": "본교",
+    "category": "장학",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142305",
+    "crawled_at": "2026-11-24T05:39:56+00:00",
+    "first_seen_at": "2026-11-24T05:39:56+00:00"
+  },
+  {
+    "id": "ee0c6f84dc8d6ac2",
+    "title": "(자)1398피트니스센터 12월등록",
+    "source_site": "본교",
+    "category": "채용/모집",
+    "published_date": "2026-11-24",
+    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142256",
+    "crawled_at": "2026-11-24T05:39:58+00:00",
+    "first_seen_at": "2026-11-24T05:39:58+00:00"
+  },
+  {
     "id": "7146bb35115dd3f1",
     "title": "학자금 지원구간 개편 사전 안내(2027학년도부터 적용)",
     "source_site": "본교",
@@ -39,26 +229,6 @@ window.NOTICES = [
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142182",
     "crawled_at": "2026-11-23T02:03:21+00:00",
     "first_seen_at": "2026-11-23T02:03:21+00:00"
-  },
-  {
-    "id": "00549c70784e2af3",
-    "title": "경제대학 경제학과 행정조교 신규 채용 ~12.4.(금) 16시까지(합격자 결정 시 조기마감 가능)",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-11-23",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=139855",
-    "crawled_at": "2026-11-23T13:47:30+00:00",
-    "first_seen_at": "2026-09-14T09:20:15+00:00"
-  },
-  {
-    "id": "18ba80b0b5d07f69",
-    "title": "「2026 인공지능혁신융합대학사업단 산학협력 학생 성과 공유회」 참여 학생 모집",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-11-23",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142201",
-    "crawled_at": "2026-11-23T13:47:30+00:00",
-    "first_seen_at": "2026-11-23T13:47:29+00:00"
   },
   {
     "id": "0c10d6228d66cc09",
@@ -131,36 +301,6 @@ window.NOTICES = [
     "first_seen_at": "2026-11-23T13:48:40+00:00"
   },
   {
-    "id": "754a48e7790cf96c",
-    "title": "[인사캠] 2026년 12월 체력증진센터(경영관, 600주년기념관) 회원모집 안내",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-11-23",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142011",
-    "crawled_at": "2026-11-23T02:03:21+00:00",
-    "first_seen_at": "2026-11-16T12:10:43+00:00"
-  },
-  {
-    "id": "63934f8dcf928014",
-    "title": "[인공지능혁신융합대학사업단] 2026 서울과학기술대학교 동계 인공지능 SCI 부트캠프 개최 안내",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-11-23",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142229",
-    "crawled_at": "2026-11-23T13:47:30+00:00",
-    "first_seen_at": "2026-11-23T13:47:29+00:00"
-  },
-  {
-    "id": "f800c00254826212",
-    "title": "[인공지능혁신융합대학사업단] 2026 AICOSS 11월 전문가 특강 안내 사전신청안내",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-11-23",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141810",
-    "crawled_at": "2026-11-23T13:47:30+00:00",
-    "first_seen_at": "2026-11-12T02:34:50+00:00"
-  },
-  {
     "id": "b07878fc6e100379",
     "title": "[예필재 언론사준비반] 2027년 상반기 실원 모집 공고",
     "source_site": "본교",
@@ -169,16 +309,6 @@ window.NOTICES = [
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142234",
     "crawled_at": "2026-11-23T13:47:30+00:00",
     "first_seen_at": "2026-11-23T13:47:30+00:00"
-  },
-  {
-    "id": "58721e7c10307111",
-    "title": "[스포츠재활 연구실] 만성 발목 불안정성 대상 감각-인지 기반 발목 재활운동 연구 참여자 모집",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-11-23",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142188",
-    "crawled_at": "2026-11-23T13:47:30+00:00",
-    "first_seen_at": "2026-11-23T13:47:29+00:00"
   },
   {
     "id": "4d87dd4a933f4e58",
@@ -201,54 +331,14 @@ window.NOTICES = [
     "first_seen_at": "2026-11-23T13:47:29+00:00"
   },
   {
-    "id": "0eac195b35dd688b",
-    "title": "[대학혁신과공유센터] 제28차 대학교육혁신 워크숍 안내 \"AI 시대, AI 핵심역량과 대학 교육의 혁신\"",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-11-23",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141686",
-    "crawled_at": "2026-11-23T02:03:21+00:00",
-    "first_seen_at": "2026-11-09T01:17:01+00:00"
-  },
-  {
-    "id": "a88f41fbeb6a42f8",
-    "title": "[대학혁신과공유센터] 제26회 융합기초프로젝트 참가자 모집(~12.23 수까지)",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-11-23",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142082",
-    "crawled_at": "2026-11-23T02:03:21+00:00",
-    "first_seen_at": "2026-11-18T03:12:13+00:00"
-  },
-  {
     "id": "2128e1d70a3ac370",
     "title": "[뇌과학이미징연구단] 지각과 기억의 뇌 메커니즘 실험 참여자 모집",
     "source_site": "본교",
     "category": "채용/모집",
     "published_date": "2026-11-23",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142242",
-    "crawled_at": "2026-11-23T13:47:29+00:00",
+    "crawled_at": "2026-11-24T05:39:58+00:00",
     "first_seen_at": "2026-11-23T13:47:29+00:00"
-  },
-  {
-    "id": "1edaafe61d0ba17d",
-    "title": "[교수학습혁신센터] 2026학년도 겨울방학 “성균공부방 : Share via AI” 17기 모집",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-11-23",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142181",
-    "crawled_at": "2026-11-23T13:47:30+00:00",
-    "first_seen_at": "2026-11-23T02:03:21+00:00"
-  },
-  {
-    "id": "2785ce9644e9c9b4",
-    "title": "[★연장][창업지원단/실험실창업혁신단] 2026 SKKU UNITE 프리 텍스코어(11/28~29) 참가자 모집(이비스 앰배서더 수원, 총상금 350만원)",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-11-23",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141498",
-    "crawled_at": "2026-11-23T02:03:21+00:00",
-    "first_seen_at": "2026-11-02T11:46:11+00:00"
   },
   {
     "id": "a73d83d11f0ce03c",
@@ -291,23 +381,13 @@ window.NOTICES = [
     "first_seen_at": "2026-11-23T13:48:40+00:00"
   },
   {
-    "id": "a07a19b894759014",
-    "title": "AI응용공학과 2027학년도 전기 수시 1차 대학원 신입생 모집",
-    "source_site": "본교",
-    "category": "입학",
-    "published_date": "2026-11-23",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141723",
-    "crawled_at": "2026-11-23T13:47:29+00:00",
-    "first_seen_at": "2026-11-10T03:52:21+00:00"
-  },
-  {
     "id": "c7ee4a1bcbdf0bb8",
     "title": "AI 장편영화 제작 기술 워크숍 참여 모집",
     "source_site": "본교",
     "category": "채용/모집",
     "published_date": "2026-11-23",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142249",
-    "crawled_at": "2026-11-23T13:47:29+00:00",
+    "crawled_at": "2026-11-24T05:39:58+00:00",
     "first_seen_at": "2026-11-23T13:47:29+00:00"
   },
   {
@@ -421,16 +501,6 @@ window.NOTICES = [
     "first_seen_at": "2026-11-20T02:43:49+00:00"
   },
   {
-    "id": "426648078dd091a3",
-    "title": "★ 2026 제2회 성균관대학교 삼성융합의과학원 국제심포지엄 안내 ★(11월 30일(월)까지 홈페이지 사전 등록 )",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-11-20",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141690",
-    "crawled_at": "2026-11-23T02:03:22+00:00",
-    "first_seen_at": "2026-11-09T12:16:43+00:00"
-  },
-  {
     "id": "fa69bac02b569e11",
     "title": "[학생인재개발팀] 국가고시 길라잡이 합격수기 모집(노무사, 세무사, 감평사, 관세사, 법무사) (~11.29.일)",
     "source_site": "본교",
@@ -459,16 +529,6 @@ window.NOTICES = [
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142145",
     "crawled_at": "2026-11-23T02:03:22+00:00",
     "first_seen_at": "2026-11-19T12:17:47+00:00"
-  },
-  {
-    "id": "6a4eb98363be38bd",
-    "title": "[채용/모집] 자연과학대학 수학과사무실 행정업무 조교 채용 (~11/25(수)까지)",
-    "source_site": "본교",
-    "category": "채용/모집",
-    "published_date": "2026-11-20",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141604",
-    "crawled_at": "2026-11-23T02:03:22+00:00",
-    "first_seen_at": "2026-11-05T11:41:20+00:00"
   },
   {
     "id": "7a9f6ca5c9e4372d",
@@ -557,16 +617,6 @@ window.NOTICES = [
     "category": "채용/모집",
     "published_date": "2026-11-19",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142139",
-    "crawled_at": "2026-11-20T02:43:51+00:00",
-    "first_seen_at": "2026-11-19T12:17:47+00:00"
-  },
-  {
-    "id": "7efd37bf69749b0a",
-    "title": "[서울시-SBA] 서울 야간경제 활성화 해커톤 참가팀 모집(~12월 7일, 총 상금 1,500만원)",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-11-19",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142140",
     "crawled_at": "2026-11-20T02:43:51+00:00",
     "first_seen_at": "2026-11-19T12:17:47+00:00"
   },
@@ -829,16 +879,6 @@ window.NOTICES = [
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142059",
     "crawled_at": "2026-11-17T04:13:53+00:00",
     "first_seen_at": "2026-11-17T04:13:53+00:00"
-  },
-  {
-    "id": "8f57393ca3907e37",
-    "title": "[성균관대·POSTECH 공동주최] 행정혁신포럼「AI시대의 대학행정」안내",
-    "source_site": "본교",
-    "category": "행사/세미나",
-    "published_date": "2026-11-17",
-    "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141939",
-    "crawled_at": "2026-11-18T03:12:14+00:00",
-    "first_seen_at": "2026-11-13T11:40:26+00:00"
   },
   {
     "id": "7c95d33abe8fc937",
@@ -1897,7 +1937,7 @@ window.NOTICES = [
     "category": "일반",
     "published_date": "2026-11-09",
     "original_url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140492",
-    "crawled_at": "2026-11-23T13:47:30+00:00",
+    "crawled_at": "2026-11-24T05:39:58+00:00",
     "first_seen_at": "2026-10-12T11:24:58+00:00"
   },
   {
